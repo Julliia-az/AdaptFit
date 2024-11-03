@@ -111,36 +111,39 @@
     /* Cor verde para "Fit" */
 }
 
-footer {
-    position: fixed;
-    /* Fixa o rodapé na parte inferior */
-    bottom: 0;
-    /* Fixa no fundo da página */
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    /* Fundo semi-transparente */
-    color: white;
-    /* Cor do texto do rodapé */
-    text-align: center;
-    /* Centraliza o texto */
-    padding: 10px;
-    /* Espaçamento interno do rodapé */
-    z-index: 2;
-    /* Z-index para ficar acima de outros elementos */
+.encontre {
+    color: #000000;
+    /* Cor preta para "Encontre a academia" */
 }
+
+.proxima {
+    color: #54D100;
+    /* Cor verde para "mais próxima!" */
+}
+
+.treine {
+    color: #000000;
+    /* Cor preta para "Treine na AdaptFit" */
+}
+
+.inclusao {
+    color: #54D100;
+    /* Cor verde para "A academia líder em acessibilidade e inclusão" */
+}
+
 
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #F5F5F5;
 }
 
 header {
-    background: #4CAF50;
+    background: #54D100;
     color: white;
-    padding: 20px 0;
+    padding: 30px 0;
     text-align: center;
 }
 
@@ -164,19 +167,23 @@ nav ul li a {
     position: relative;
     text-align: center;
     margin: 20px 0;
+    border-radius: 10px;
 }
 
-.search-background {
-    background-image: url('sua-imagem-de-fundo.jpg'); /* Substitua pelo caminho da sua imagem */
+.search-background { /* Imagem do input */
+    background-image: url('Imagem_EscolherAcademia.jpg');
     background-size: cover;
     padding: 50px 0;
+    border-radius: 10px; /* Arredondar os cantos da imagem */
+    height: auto; /* Manter a proporção */
+    border-radius: 10px; /* Manter os cantos arredondados */
 }
 
 .search-background input {
-    width: 80%;
+    width: 60%; /* Reduzir a largura do prompt de pesquisa */
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 5px; /* Manter o arredondamento do input */
 }
 
 .examples {
@@ -187,16 +194,29 @@ nav ul li a {
 .example-images {
     display: flex;
     justify-content: center;
+    gap: 20px; /* Espaço entre os blocos */
 }
 
 .example {
-    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 250px; /* Largura do bloco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Para esconder os cantos arredondados */
 }
 
+.location {
+    background-color: #54D100; /* Verde */
+    color: #FFFFFF; /* Texto branco */
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
 .example img {
-    width: 200px; /* Defina a largura desejada */
+    width: 100%; /* Imagem ocupa toda a largura do bloco */
     height: auto;
-    border-radius: 10px;
 }
 
 
@@ -220,4 +240,23 @@ form label {
 form input {
     padding: 10px;
     margin: 5px 0;
+}
+
+footer {
+    position: fixed;
+    /* Fixa o rodapé na parte inferior */
+    bottom: 0;
+    /* Fixa no fundo da página */
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fundo semi-transparente */
+    color: white;
+    /* Cor do texto do rodapé */
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 10px;
+    /* Espaçamento interno do rodapé */
+    z-index: 2;
+    /* Z-index para ficar acima de outros elementos */
 }
