@@ -26,4 +26,4 @@ O projeto é composto por seis páginas principais:
 
 1. **Clone o repositório**: 
    ```bash
-   git clone https://github.com/seuusuario/adaptfit.git
+   git clone git@github.com:Julliia-az/AdaptFit.git
