@@ -152,12 +152,53 @@ nav ul {
 nav ul li {
     display: inline;
     margin: 0 15px;
+    margin-right: 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
 }
+
+.search-section {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-background {
+    background-image: url('sua-imagem-de-fundo.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.search-background input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.examples {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.example-images {
+    display: flex;
+    justify-content: center;
+}
+
+.example {
+    margin: 0 10px;
+}
+
+.example img {
+    width: 200px; /* Defina a largura desejada */
+    height: auto;
+    border-radius: 10px;
+}
+
 
 main {
     padding: 20px;
