@@ -70,6 +70,17 @@
     /* Cor verde ao passar o mouse */
 }
 
+.content {
+    position: relative;
+    /* Para garantir que o conteúdo apareça acima da sobreposição */
+    z-index: 2;
+    /* O conteúdo deve estar acima da sobreposição */
+    color: white;
+    /* Cor do texto */
+    text-align: center;
+    /* Centraliza o texto */
+}
+
 .title {
     font-family: 'Montserrat', sans-serif;
     /* Define a fonte Montserrat */
@@ -102,13 +113,11 @@
 
 .encontre {
     color: #000000;
-    font-size: 30px;
     /* Cor preta para "Encontre a academia" */
 }
 
 .proxima {
     color: #54D100;
-    font-size: 30px;
     /* Cor verde para "mais próxima!" */
 }
 
@@ -122,46 +131,13 @@
     /* Cor verde para "A academia líder em acessibilidade e inclusão" */
 }
 
-/* Estilos padrão (modo claro) */
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #F5F5F5;
-    color: #000000;
-}
-
-/* Modo escuro */
-body.dark-mode {
-    background-color: #121212;
-    color: #FFFFFF;
-}
-
-/* Outros elementos específicos */
-header, footer {
-    background-color: #333;
-}
-
-body.dark-mode header,
-body.dark-mode footer {
-    background-color: #222;
-}
-
-#toggle-dark-mode {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    padding: 10px 20px;
-    background-color: #54D100; /* Verde no estilo da AdaptFit */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#toggle-dark-mode:hover {
-    background-color: #4BB500; /* Escurecer o botão ao passar o mouse */
 }
 
 header {
@@ -283,56 +259,4 @@ footer {
     /* Espaçamento interno do rodapé */
     z-index: 2;
     /* Z-index para ficar acima de outros elementos */
-}
-
-/* Estilos para a barra lateral */
-.w3-sidebar {
-    height: 100%; /* Ocupa toda a altura */
-    width: 250px; /* Largura da barra lateral */
-    position: fixed; /* Fica fixada na tela */
-    top: 0;
-    left: 0; /* Começa na posição 0 */
-    background-color: #333; /* Cor de fundo da barra lateral */
-    color: white; /* Cor do texto */
-    transition: 0.3s; /* Efeito suave para abrir/fechar */
-}
-
-.w3-sidebar.show {
-    left: 0; /* Move para dentro da tela quando ativada */
-}
-
-/* Estilos para os itens da barra lateral */
-.w3-sidebar .w3-bar-item {
-    padding: 16px;
-    text-align: left;
-}
-
-.w3-sidebar .w3-bar-item:hover {
-    background-color: #444; /* Cor de hover */
-}
-
-/* Estilo do botão de menu */
-.menu-button {
-    position: absolute; /* Posicionar o botão de menu */
-    top: 20px; /* Distância do topo */
-    right: 20px; /* Distância da direita */
-    background-color: #0000002d; /* Cor de fundo verde */
-    color: white; /* Cor do texto */
-    border: none; /* Sem borda */
-    padding: 10px 15px; /* Espaçamento interno */
-    cursor: pointer; /* Cursor de mão ao passar o mouse */
-    margin: 2opx;
-}
-
-.content {
-    position: relative;
-    /* Para garantir que o conteúdo apareça acima da sobreposição */
-    z-index: 2;
-    /* O conteúdo deve estar acima da sobreposição */
-    color: white;
-    /* Cor do texto */
-    text-align: center;
-    /* Centraliza o texto */
-    margin-left: 250px; /* Espaço para a barra lateral */
-    padding: 20px; /* Espaçamento do conteúdo */
 }
