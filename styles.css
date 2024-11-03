@@ -1,3 +1,135 @@
+.inicio {
+    background-image: url('Imagem_Inicio.png');
+    /* Caminho da imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    /* Para permitir a sobreposição */
+    padding-top: 80px;
+    /* Espaço para o cabeçalho fixo */
+    display: flex;
+    /* Habilita o Flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+}
+
+.overlay {
+    position: absolute;
+    /* Para cobrir a imagem de fundo */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Preto com 50% de opacidade */
+    z-index: 1;
+    /* A sobreposição deve estar acima da imagem de fundo */
+}
+
+.navbar {
+    position: fixed;
+    /* Mantém o cabeçalho fixo no topo */
+    top: 0;
+    /* Fixa no topo da página */
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    /* Espaço entre os itens */
+    align-items: center;
+    /* Alinhamento vertical */
+    padding: 20px;
+    /* Espaçamento interno do navbar */
+    /* background-color: rgba(0, 0, 0, 0.7); /*Fundo semi-transparente */
+    color: white;
+    /* Cor dos links do navbar */
+    font-family: 'Montserrat', sans-serif;
+    /* Define a fonte */
+    z-index: 2;
+    /* Z-index para ficar acima da sobreposição */
+}
+
+.navbar a {
+    color: #FFFFFF;
+    /* Cor branca para os links */
+    text-decoration: none;
+    /* Remove sublinhado dos links */
+    padding: 10px;
+    /* Espaçamento em torno dos links */
+    transition: color 0.3s;
+    /* Transição suave ao passar o mouse */
+}
+
+.navbar a:hover {
+    color: #54D100;
+    /* Cor verde ao passar o mouse */
+}
+
+.content {
+    position: relative;
+    /* Para garantir que o conteúdo apareça acima da sobreposição */
+    z-index: 2;
+    /* O conteúdo deve estar acima da sobreposição */
+    color: white;
+    /* Cor do texto */
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    /* Define a fonte Montserrat */
+    font-size: 120px;
+    /* Tamanho da fonte */
+    font-weight: bold;
+    /* Negrito */
+    font-style: italic;
+    /* Itálico */
+    text-shadow:
+        2px 2px 0px black,
+        /* Sombra 1 (direita e abaixo) */
+        -2px -2px 0px black,
+        /* Sombra 2 (esquerda e acima) */
+        2px -2px 0px black,
+        /* Sombra 3 (direita e acima) */
+        -2px 2px 0px black;
+    /* Sombra 4 (esquerda e abaixo) */
+}
+
+.adapt {
+    color: #FFFFFF;
+    /* Cor branca para "Adapt" */
+}
+
+.fit {
+    color: #54D100;
+    /* Cor verde para "Fit" */
+}
+
+footer {
+    position: fixed;
+    /* Fixa o rodapé na parte inferior */
+    bottom: 0;
+    /* Fixa no fundo da página */
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fundo semi-transparente */
+    color: white;
+    /* Cor do texto do rodapé */
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 10px;
+    /* Espaçamento interno do rodapé */
+    z-index: 2;
+    /* Z-index para ficar acima de outros elementos */
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -33,13 +165,6 @@ main {
 
 section {
     margin: 20px 0;
-}
-
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
 }
 
 form {
