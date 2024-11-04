@@ -1,5 +1,5 @@
 .inicio {
-    background-image: url('Imagem_Inicio.png');
+    background-image: url('Imagens/Imagem_Inicio.png');
     /* Caminho da imagem de fundo */
     background-size: cover;
     background-position: center;
@@ -170,7 +170,7 @@ header {
 }
 
 .search-background { /* Imagem do input */
-    background-image: url('Imagem_EscolherAcademia.jpg');
+    background-image: url('Imagens/Imagem_EscolherAcademia.jpg');
     background-size: cover;
     background-position: center; /* Centraliza a imagem no fundo */
     padding: 50px; /* Reduz o espaçamento interno */
