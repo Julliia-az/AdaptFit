@@ -48,8 +48,10 @@
     /* background-color: rgba(0, 0, 0, 0.7); /*Fundo semi-transparente */
     color: white;
     /* Cor dos links do navbar */
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     /* Define a fonte */
+    font-weight: bold;
+    /* Negrito */
     z-index: 2;
     /* Z-index para ficar acima da sobreposição */
 }
@@ -113,24 +115,37 @@
 
 .encontre {
     color: #000000;
+    font-size: 30px;
     /* Cor preta para "Encontre a academia" */
 }
 
 .proxima {
     color: #54D100;
+    font-size: 30px;
     /* Cor verde para "mais próxima!" */
 }
 
 .treine {
     color: #000000;
+    font-size: 30px;
     /* Cor preta para "Treine na AdaptFit" */
 }
 
 .inclusao {
     color: #54D100;
+    font-size: 30px;
     /* Cor verde para "A academia líder em acessibilidade e inclusão" */
 }
 
+h2{
+    text-align: center;
+}
+
+.frase{
+    font-family: 'Open Sans', sans-serif; 
+    text-align: center;
+    font-size: 18px;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -141,26 +156,10 @@ body {
 }
 
 header {
-    background: #54D100;
+    background: #424242;
     color: white;
     padding: 30px 0;
     text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
 }
 
 .search-section {
@@ -173,17 +172,22 @@ nav ul li a {
 .search-background { /* Imagem do input */
     background-image: url('Imagem_EscolherAcademia.jpg');
     background-size: cover;
-    padding: 50px 0;
+    background-position: center; /* Centraliza a imagem no fundo */
+    padding: 50px; /* Reduz o espaçamento interno */
     border-radius: 10px; /* Arredondar os cantos da imagem */
-    height: auto; /* Manter a proporção */
-    border-radius: 10px; /* Manter os cantos arredondados */
+    width: 80%; /* Ajusta a largura da div */
+    max-width: 700px; /* Define uma largura máxima para a div */
+    margin: 0 auto; /* Centraliza a div horizontalmente */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra para destaque */
+    text-align: center; /* Centraliza o input dentro da div */
 }
 
 .search-background input {
-    width: 60%; /* Reduzir a largura do prompt de pesquisa */
-    padding: 10px;
+    width: 45%; /* Reduzir a largura do prompt de pesquisa */
+    padding: 15px;
     border: none;
-    border-radius: 5px; /* Manter o arredondamento do input */
+    border-radius: 50px; /* Manter o arredondamento do input */
+    outline: none;
 }
 
 .examples {
@@ -194,7 +198,7 @@ nav ul li a {
 .example-images {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Espaço entre os blocos */
+    gap: 30px; /* Espaço entre os blocos */
 }
 
 .example {
@@ -243,20 +247,14 @@ form input {
 }
 
 footer {
-    position: fixed;
-    /* Fixa o rodapé na parte inferior */
     bottom: 0;
     /* Fixa no fundo da página */
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #424242;
     /* Fundo semi-transparente */
     color: white;
     /* Cor do texto do rodapé */
     text-align: center;
     /* Centraliza o texto */
-    padding: 10px;
-    /* Espaçamento interno do rodapé */
-    z-index: 2;
-    /* Z-index para ficar acima de outros elementos */
 }

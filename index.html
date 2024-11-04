@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <title>AdaptFit - Início</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.google.com/specimen/Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> <!-- Importar a fonte Open Sans -->
+  <title>AdaptFit - Início</title>
 </head>
-<body class="inicio">
-    <div class="overlay"></div>
+<body>
+
+  <!-- Inicio - Página 1 -->
+<section class="inicio">
+  <div class="overlay"></div>
   <nav class="navbar">
     <div>
       <a href="index.html">Início</a>
@@ -26,8 +32,71 @@
       <span class="adapt">Adapt</span><span class="fit">Fit</span>
     </h1>
   </div>
-    <footer>
-        <p>&copy; 2024 AdaptFit - Todos os direitos reservados.</p>
-    </footer>
+</section>
+
+<!-- Encontrar Academias - Página 2 -->
+<section id="encontrar">
+  <main>
+    <section class="search-section">
+        <h2><span class="encontre">Encontre a academia</span><span class="proxima"> mais próxima!</span></h2>
+        <div class="search-background">
+            <input type="text" placeholder="Digite sua localização ou o nome da academia...">
+        </div>
+    </section>
+
+    <section class="examples">
+        <div class="example-images">
+            <div class="example">
+                <div class="location">Americana/SP</div>
+                <img src="AcademiaAmericana.jpg" alt="Academias em Americana/SP">
+            </div>
+            <div class="example">
+                <div class="location">Ribeirão Preto</div>
+                <img src="AcademiaRiberaoPreto.jpg" alt="Academias em Ribeirão Preto">
+            </div>
+            <div class="example">
+                <div class="location">Campinas</div>
+                <img src="AcademiaCampinas.jpg" alt="Academias em Campinas">
+            </div>
+        </div>
+    </section>
+</main>
+</section>
+
+<!-- Planos - Página 3 -->
+<section id="planos">
+  <h2><span class="treine">Treine na AdaptFit </span><span class="inclusao">A academia líder em acessibilidade e inclusão</span></h2>
+  <p class="frase">Inclusão, acessibilidade e desempenho em um espaço criado para todos.</p>
+</section>
+
+<!-- Experiência e entre em contato - Página 4 -->
+<section id="experiencia">
+  <h2>Experiência na AdaptFit</h2>
+  <main>
+    <h2>O que oferecemos</h2>
+    <p>Equipamentos personalizados, profissionais treinados e um ambiente acolhedor.</p>
+    
+    <h3>Entre em Contato</h3>
+    <form id="contatoForm">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Enviar</button>
+    </form>
+</main>
+</section>
+
+<section id="cadastro">
+  <h2>Área de Cadastro</h2>
+  <main>
+    <h2>Bem-vindo, aluno!</h2>
+    <p>Acesse seu espaço exclusivo clicando no link abaixo.</p>
+    <a href="https://seusiteexclusivo.com" target="_blank">Acessar Área do Aluno</a>
+</main>
+</section>
+
+<footer>
+  <p>&copy; 2024 AdaptFit - Todos os direitos reservados.</p>
+</footer>
 </body>
+
 </html>
