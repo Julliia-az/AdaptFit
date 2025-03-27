@@ -20,7 +20,6 @@ O projeto é composto por seis páginas principais:
 - **HTML** - Estrutura do site
 - **CSS** - Estilo e layout
 - **JavaScript** - Interatividade
-- **Python** (opcional) - Para futuras implementações de backend
 
 ## Como Contribuir
 
