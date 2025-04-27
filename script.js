@@ -1,5 +1,5 @@
 function irPagina(id) { //rola ate a pag desejada
-    const elemento = document.getElementById(id);
+    let elemento = document.getElementById(id);
     if (elemento) {
         elemento.scrollIntoView({ behavior: "smooth" });
     }
