@@ -31,46 +31,30 @@
     /* A sobreposição deve estar acima da imagem de fundo */
 }
 
+/* NAVBAR */
 .navbar {
     position: fixed;
-    /* Mantém o cabeçalho fixo no topo */
+    width: 100%;
     top: 0;
-    /* Fixa no topo da página */
-    left: 0;
-    right: 0;
+    background: rgba(0, 0, 0, 0.41);
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
-    /* Espaço entre os itens */
     align-items: center;
-    /* Alinhamento vertical */
-    padding: 20px;
-    /* Espaçamento interno do navbar */
-    /* background-color: rgba(0, 0, 0, 0.7); /*Fundo semi-transparente */
-    color: white;
-    /* Cor dos links do navbar */
-    font-family: 'Lato', sans-serif;
-    /* Define a fonte */
-    font-weight: bold;
-    /* Negrito */
-    z-index: 2;
-    /* Z-index para ficar acima da sobreposição */
-}
-
-.navbar a {
-    color: #FFFFFF;
-    /* Cor branca para os links */
+    z-index: 1000;
+  }
+  
+  .navbar a {
+    color: #fff;
     text-decoration: none;
-    /* Remove sublinhado dos links */
-    padding: 10px;
-    /* Espaçamento em torno dos links */
-    transition: color 0.3s;
-    /* Transição suave ao passar o mouse */
-}
-
-.navbar a:hover {
+    margin: 0 10px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
     color: #54D100;
-    /* Cor verde ao passar o mouse */
-}
+  }
 
 .content {
     position: relative;
@@ -81,6 +65,11 @@
     /* Cor do texto */
     text-align: center;
     /* Centraliza o texto */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* se quiser que o conteúdo empilhe verticalmente */
 }
 
 .title {
@@ -358,5 +347,213 @@ footer {
 
     .gympass{
         color: #54D100;
+    }
+}
+
+/* EXPERIÊNCIA */
+  .examples-e {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+    justify-content: center;
+    gap: 30px; /* Espaçamento entre os blocos */
+    margin-top: 20px;
+}
+
+.example-images-e {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.example-e {
+    width: 300px;
+    background-color: #54d100e0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.example-e img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Corta para manter a proporção */
+}
+
+.experiencia {
+    background-color: #54D100;
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn-buscar-academia {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #54D100;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #3aa200;
+}
+
+.novidades-h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+input[type="email"] {
+    width: 100%;
+    max-width: 400px; /* Limita a largura */
+    padding: 12px 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  input[type="email"]:focus {
+    border-color: #54D100; /* Cor quando clicar na caixa */
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* se quiser o botão embaixo também */
+    min-height: 200px; /* opcional, altura mínima */
+  }
+
+  .cadastro-container {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .input-email {
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    width: 300px; /* Ajuste o tamanho conforme preferir */
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #333; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto branco */
+    padding: 40px 0;
+    font-size: 0.9em;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.follow-us {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.follow-us h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    height: 30px; /* Ajuste o tamanho dos ícones conforme necessário */
+    width: auto;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons img:hover {
+    opacity: 1;
+}
+
+.links-section {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.links-section > div {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.links-section h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.links-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links-section li {
+    margin-bottom: 8px;
+}
+
+.links-section a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.links-section a:hover {
+    color: #fff;
+}
+
+/* Adaptações para telas menores */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .links-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links-section > div {
+        margin: 20px 0;
+        text-align: center;
     }
 }
