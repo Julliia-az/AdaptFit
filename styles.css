@@ -1,34 +1,25 @@
 .inicio {
     background-image: url('Imagens/Imagem_Inicio.png');
-    /* Caminho da imagem de fundo */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     margin: 0;
-    position: relative;
-    /* Para permitir a sobreposição */
-    padding-top: 80px;
-    /* Espaço para o cabeçalho fixo */
+    position: relative; /* Para permitir a sobreposição */
+    padding-top: 80px; /* Espaço para o cabeçalho fixo */
     display: flex;
-    /* Habilita o Flexbox */
-    justify-content: center;
-    /* Centraliza horizontalmente */
-    align-items: center;
-    /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
 }
 
 .overlay {
-    position: absolute;
-    /* Para cobrir a imagem de fundo */
+    position: absolute; /* Para cobrir a imagem de fundo */
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Preto com 50% de opacidade */
-    z-index: 1;
-    /* A sobreposição deve estar acima da imagem de fundo */
+    background-color: rgba(0, 0, 0, 0.5); /* Preto com 50% de opacidade */
+    z-index: 1; /* A sobreposição deve estar acima da imagem de fundo */
 }
 
 /* NAVBAR */
@@ -57,61 +48,45 @@
   }
 
 .content {
-    position: relative;
-    /* Para garantir que o conteúdo apareça acima da sobreposição */
-    z-index: 2;
-    /* O conteúdo deve estar acima da sobreposição */
+    position: relative; /* Para garantir que o conteúdo apareça acima da sobreposição */
+    z-index: 2; /* O conteúdo deve estar acima da sobreposição */
     color: white;
-    /* Cor do texto */
     text-align: center;
-    /* Centraliza o texto */
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* se quiser que o conteúdo empilhe verticalmente */
+    flex-direction: column; /* conteúdo empilha verticalmente */
 }
 
 .title {
     font-family: 'Montserrat', sans-serif;
-    /* Define a fonte Montserrat */
     font-size: 120px;
-    /* Tamanho da fonte */
     font-weight: bold;
-    /* Negrito */
     font-style: italic;
-    /* Itálico */
     text-shadow:
-        2px 2px 0px black,
-        /* Sombra 1 (direita e abaixo) */
-        -2px -2px 0px black,
-        /* Sombra 2 (esquerda e acima) */
-        2px -2px 0px black,
-        /* Sombra 3 (direita e acima) */
-        -2px 2px 0px black;
-    /* Sombra 4 (esquerda e abaixo) */
+        2px 2px 0px black, /* Sombra 1 (direita e abaixo) */
+        -2px -2px 0px black, /* Sombra 2 (esquerda e acima) */
+        2px -2px 0px black, /* Sombra 3 (direita e acima) */
+        -2px 2px 0px black; /* Sombra 4 (esquerda e abaixo) */
 }
 
 .adapt {
     color: #FFFFFF;
-    /* Cor branca para "Adapt" */
 }
 
 .fit {
     color: #54D100;
-    /* Cor verde para "Fit" */
 }
 
 .texto-preto {
     color: #000000;
     font-size: 30px;
-    /* Cor preta para "Encontre a academia" */
 }
 
 .texto-verde {
     color: #54D100;
     font-size: 30px;
-    /* Cor verde para "mais próxima!" */
 }
 
 h2 {
@@ -151,30 +126,20 @@ header {
     background-image: url('Imagens/Imagem_EscolherAcademia.jpg');
     background-size: cover;
     background-position: center;
-    /* Centraliza a imagem no fundo */
     padding: 50px;
-    /* Reduz o espaçamento interno */
     border-radius: 10px;
-    /* Arredondar os cantos da imagem */
     width: 80%;
-    /* Ajusta a largura da div */
-    max-width: 700px;
-    /* Define uma largura máxima para a div */
+    max-width: 750px;
     margin: 0 auto;
-    /* Centraliza a div horizontalmente */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    /* Adiciona uma leve sombra para destaque */
-    text-align: center;
-    /* Centraliza o input dentro da div */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra para destaque */
+    text-align: center; /* Centraliza o input dentro da div */
 }
 
 .search-background input {
-    width: 45%;
-    /* Reduzir a largura do prompt de pesquisa */
+    width: 40%; /* Reduzir a largura do prompt de pesquisa */
     padding: 15px;
     border: none;
-    border-radius: 50px;
-    /* Manter o arredondamento do input */
+    border-radius: 50px; /* Manter o arredondamento do input */
     outline: none;
 }
 
@@ -193,18 +158,14 @@ header {
 .example {
     border: 1px solid #ccc;
     border-radius: 10px;
-    width: 250px;
-    /* Largura do bloco */
+    width: 250px; /* Largura do bloco */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    /* Para esconder os cantos arredondados */
 }
 
 .location {
     background-color: #54D100;
-    /* Verde */
     color: #FFFFFF;
-    /* Texto branco */
     padding: 10px;
     text-align: center;
     font-weight: bold;
@@ -240,18 +201,6 @@ form input {
     margin: 5px 0;
 }
 
-footer {
-    bottom: 0;
-    /* Fixa no fundo da página */
-    left: 0;
-    right: 0;
-    background-color: #424242;
-    /* Fundo semi-transparente */
-    color: white;
-    /* Cor do texto do rodapé */
-    text-align: center;
-    /* Centraliza o texto */
-}
 .bloco {
     width: 220px; /* Ajuste o tamanho conforme necessário */
     height: 260px; /* Ajuste o tamanho conforme necessário */
@@ -274,72 +223,73 @@ footer {
 
 .blocos {
     display: flex;
-    gap: 20px; /* Espaçamento entre os blocos */
-    justify-content: center; /* Centraliza os blocos horizontalmente */
+    gap: 20px;
+    justify-content: center;
 }
 
 .plano {
-    color: #333333; /* Cor do texto mais suave */
+    color: #333333;
     font-weight: normal;
     text-align: center;
-    font-size: 1.2em; /* Aumenta o tamanho da fonte */
-    margin: 5px 0; /* Margem vertical para espaçamento */
+    font-size: 1.2em;
+    margin: 5px 0;
 }
 
 .tempo {
-    color: #333333; /* Cor do texto mais suave */
-    font-weight: bold; /* Negrito para destaque */
+    color: #333333;
+    font-weight: bold;
     text-align: center;
-    font-size: 1.1em; /* Tamanho da fonte ajustado */
-    margin: 5px 0; /* Margem vertical para espaçamento */
+    font-size: 1.1em;
+    margin: 5px 0;
 }
 
 .preco {
     font-weight: bold;
     text-align: center;
-    font-size: 1.5em; /* Aumenta o tamanho da fonte do preço */
-    color: #54D100; /* Cor verde para destacar o preço */
-    margin: 5px 0; /* Margem vertical para espaçamento */
+    font-size: 1.5em;
+    color: #54D100;
+    margin: 5px 0;
 }
 
 .parcela {
     font-weight: normal;
     text-align: center;
-    color: #555555; /* Cor mais clara para diferenciação */
-    margin: 5px 0; /* Margem vertical para espaçamento */
+    color: #555555;
+    margin: 5px 0;
 }
 
 .gympass-container {
-    display: flex; /* Usando flexbox para centralizar o bloco Gympass */
-    justify-content: center; /* Centraliza o bloco Gympass horizontalmente */
-    width: 100%; /* Para garantir que ocupa a largura total do contêiner */
-    margin-top: 20px; /* Espaçamento acima do bloco Gympass */
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+    margin-top: 20px; 
 }
 
 .gympass-bloco {
     width: 1060px; 
     height: 150px;
-    border: 2px solid #54D100; /* A mesma cor e espessura da borda */
-    border-radius: 15px; /* O mesmo arredondamento dos cantos */
-    padding: 20px; /* O mesmo espaçamento interno */
-    box-sizing: border-box; /* Inclui a borda e o padding no tamanho total */
-    flex-direction: column; /* Alinha os itens verticalmente */
-    display: flex; /* Usando flexbox para centralizar conteúdo */
-    justify-content: center; /* Centraliza verticalmente os itens */
-    background-color: #f9f9f9; /* Fundo suave para o bloco */
-    transition: transform 0.2s; /* Transição suave ao passar o mouse */
+    border: 2px solid #54D100;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+    transition: transform 0.2s;
 
 }
 
 .gympass-bloco:hover {
-    transform: scale(1.05); /* Aumenta um pouco o tamanho do bloco ao passar o mouse */
+    transform: scale(1.05);
 }
 
 .gympass-texto {
-    color: #333333; /* Cor do texto mais suave */
-    font-weight: bold; /* Negrito para destaque */
-    font-size: 1.5em; /* Aumenta o tamanho da fonte */
-    margin: 5px 0; /* Margem vertical para espaçamento */
+    color: #333333;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 5px 0;
+}
     
     .treine{
         color: #000000;
@@ -348,14 +298,14 @@ footer {
     .gympass{
         color: #54D100;
     }
-}
+
 
 /* EXPERIÊNCIA */
   .examples-e {
     display: flex;
     flex-wrap: wrap; /* Permite quebrar linha em telas menores */
     justify-content: center;
-    gap: 30px; /* Espaçamento entre os blocos */
+    gap: 30px;
     margin-top: 20px;
 }
 
@@ -368,7 +318,7 @@ footer {
 
 .example-e {
     width: 300px;
-    background-color: #54d100e0;
+    background-color: #54d100ad;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -439,8 +389,8 @@ input[type="email"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* se quiser o botão embaixo também */
-    min-height: 200px; /* opcional, altura mínima */
+    flex-direction: column;
+    min-height: 200px;
   }
 
   .cadastro-container {
@@ -459,7 +409,7 @@ input[type="email"] {
   }
   
   footer {
-    background-color: #333; /* Cor de fundo escura */
+    background-color: #1a1a1a; /* Cor de fundo escura */
     color: #fff; /* Cor do texto branco */
     padding: 40px 0;
     font-size: 0.9em;
