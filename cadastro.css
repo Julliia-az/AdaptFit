@@ -150,3 +150,18 @@ footer {
         margin-top: 10px;
     }
 }
+
+/*Botão de acessibilidade*/
+#leitor {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-90%);
+  background-color: #ddd;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 0 3px 5px 0;
+  cursor: pointer;
+  z-index: 1000;
+}

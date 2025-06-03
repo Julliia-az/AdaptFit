@@ -507,3 +507,18 @@ input[type="email"] {
         text-align: center;
     }
 }
+
+/*Botão de acessibilidade*/
+#leitor {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-90%);
+  background-color: #ddd;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  z-index: 1000;
+}
