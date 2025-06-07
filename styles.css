@@ -522,3 +522,30 @@ input[type="email"] {
   cursor: pointer;
   z-index: 1000;
 }
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 60px;
+  }
+
+  .bloco, .gympass-bloco {
+    width: 90%;
+    height: auto;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar a {
+    margin: 5px 0;
+  }
+}
+
+a:focus,
+.button:focus {
+  outline: 2px solid #54D100;
+  outline-offset: 4px;
+}
+
