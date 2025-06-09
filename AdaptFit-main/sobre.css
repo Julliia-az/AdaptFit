@@ -1,0 +1,179 @@
+body {
+     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header 
+{
+    position: fixed;
+    top: 0;
+    background-color: #555555;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2{
+    font-size: 40px;
+}
+
+button{
+    border-radius: 10px;
+    background-color: #54D100;
+    margin-right: 40px;
+}
+
+button:hover{
+    background-color: #3aa200;
+    transform: scale(1.05);
+}
+
+input{
+    border-radius: 10px;
+    background-color: #f4f4f4;
+}
+
+.footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: relative;
+}
+       
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.NossaMissao {
+    border: 3px solid #54d10020;
+    border-radius: 20px;
+    width: 50%;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 90px;
+}
+
+.NossaMissao:hover{
+    transform: scale(1.05);
+    margin-left: 25px;
+}
+
+.SobreNos {
+    border: 3px solid #54d10020;
+    border-radius: 20px;
+    width: 50%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: 20px; 
+    margin-top: 30px;
+}
+
+.SobreNos:hover {
+    transform: scale(1.05);
+    margin-right: 25px;
+}
+
+.pesquisas {
+    text-align: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.pesquisa {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    /* Espaço entre os blocos */
+}
+
+.dados {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 280px; /* Largura do bloco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.nossa-equipe{
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.equipe{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.integrantes{
+    width: 200px;
+    height: 200px;
+    background-color: #54d100ad;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nome{
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.chamada{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.frase {
+  display: flex;               
+  align-items: center;        
+  justify-content: center;     
+  flex-direction: column;      
+  border: 1px solid #54D100;
+  border-radius: 10px;
+  padding: 10px;              
+  width: 100%;
+  max-width: 700px;            
+  font-size: 2rem;             
+  margin: 0 auto;              
+  text-align: center;         
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 500px) {
+  .frase {
+    font-size: 1.5rem; 
+    padding: 15px;
+  }
+}
+
+
+
+
+
