@@ -21,12 +21,12 @@ const icone = botaoLeitor.querySelector('img');
 botaoLeitor.addEventListener('click', () => {
   modoLeituraAtivo = !modoLeituraAtivo;
 
-  botaoLeitor.style.backgroundColor = modoLeituraAtivo ? '#ddd' : '#ddd';
+  botaoLeitor.style.backgroundColor = modoLeituraAtivo ? '#000080' : '#000080';
 
   botaoLeitor.setAttribute('aria-label', modoLeituraAtivo ? 'Parar leitor de tela' : 'Ativar leitor de tela');
   botaoLeitor.setAttribute('title', modoLeituraAtivo ? 'Parar leitor de tela' : 'Ativar leitor de tela');
 
-  icone.src = modoLeituraAtivo ? 'Imagens/cross.png' : 'Imagens/eye (1).png';
+  icone.src = modoLeituraAtivo ? 'Imagens/x.png' : 'Imagens/olho.png';
 });
 
 document.addEventListener('click', function(e) {
@@ -44,4 +44,11 @@ document.addEventListener('click', function(e) {
     utterance.lang = 'pt-BR';
     speechSynthesis.speak(utterance);
   }
+});
+
+//dark mode
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+  document.body.classList.toggle('dark');
 });
