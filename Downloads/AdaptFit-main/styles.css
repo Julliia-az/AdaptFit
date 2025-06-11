@@ -1,0 +1,643 @@
+.inicio {
+    background-image: url('Imagens/Imagem_Inicio.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    position: relative; /* Para permitir a sobreposição */
+    padding-top: 80px; /* Espaço para o cabeçalho fixo */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.overlay {
+    position: absolute; /* Para cobrir a imagem de fundo */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Preto com 50% de opacidade */
+    z-index: 1; /* A sobreposição deve estar acima da imagem de fundo */
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.41);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #54D100;
+  }
+
+.content {
+    position: relative; /* Para garantir que o conteúdo apareça acima da sobreposição */
+    z-index: 2; /* O conteúdo deve estar acima da sobreposição */
+    color: white;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* conteúdo empilha verticalmente */
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 120px;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow:
+        2px 2px 0px black, /* Sombra 1 (direita e abaixo) */
+        -2px -2px 0px black, /* Sombra 2 (esquerda e acima) */
+        2px -2px 0px black, /* Sombra 3 (direita e acima) */
+        -2px 2px 0px black; /* Sombra 4 (esquerda e abaixo) */
+}
+
+.adapt {
+    color: #FFFFFF;
+}
+
+.fit {
+    color: #54D100;
+}
+
+.texto-preto {
+    color: #000000;
+    font-size: 30px;
+}
+
+.texto-verde {
+    color: #54D100;
+    font-size: 30px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.frase {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 15px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+}
+
+header {
+    background: #424242;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.search-section {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.search-background {
+    /* Imagem do input */
+    background-image: url('Imagens/Imagem_EscolherAcademia.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 750px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra para destaque */
+    text-align: center; /* Centraliza o input dentro da div */
+}
+
+.search-background input {
+    width: 40%; /* Reduzir a largura do prompt de pesquisa */
+    padding: 15px;
+    border: none;
+    border-radius: 50px; /* Manter o arredondamento do input */
+    outline: none;
+}
+
+.examples {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.example-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    /* Espaço entre os blocos */
+}
+
+.example {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 250px; /* Largura do bloco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.location {
+    background-color: #54D100;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.example img {
+    width: 100%;
+    /* Imagem ocupa toda a largura do bloco */
+    height: auto;
+}
+
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 5px 0;
+}
+
+form input {
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.bloco {
+    width: 220px; /* Ajuste o tamanho conforme necessário */
+    height: 260px; /* Ajuste o tamanho conforme necessário */
+    border: 2px solid #54D100; /* Define a cor e espessura da borda */
+    border-radius: 15px; /* Define o arredondamento dos cantos */
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui a borda e o padding no tamanho total */
+    margin: 20px;
+    display: flex; /* Usando flexbox para centralizar conteúdo */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: center; /* Centraliza horizontalmente os itens */
+    justify-content: center; /* Centraliza verticalmente os itens */
+    background-color: #f9f9f9; /* Fundo suave para o bloco */
+    transition: transform 0.2s; /* Transição suave ao passar o mouse */
+}
+
+.bloco:hover {
+    transform: scale(1.05); /* Aumenta um pouco o tamanho do bloco ao passar o mouse */
+}
+
+.blocos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.plano {
+    color: #333333;
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.tempo {
+    color: #333333;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.preco {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5em;
+    color: #54D100;
+    margin: 5px 0;
+}
+
+.parcela {
+    font-weight: normal;
+    text-align: center;
+    color: #555555;
+    margin: 5px 0;
+}
+
+.gympass-container {
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+    margin-top: 20px; 
+}
+
+.gympass-bloco {
+    width: 1060px; 
+    height: 150px;
+    border: 2px solid #54D100;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+    transition: transform 0.2s;
+
+}
+
+.gympass-bloco:hover {
+    transform: scale(1.05);
+}
+
+.gympass-texto {
+    color: #333333;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 5px 0;
+}
+    
+    .treine{
+        color: #000000;
+    }
+
+    .gympass{
+        color: #54D100;
+    }
+
+
+/* EXPERIÊNCIA */
+  .examples-e {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.example-images-e {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.example-e {
+    width: 300px;
+    background-color: #54d100ad;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.example-e img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Corta para manter a proporção */
+}
+
+.experiencia {
+    background-color: #54D100;
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn-buscar-academia {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #54D100;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #3aa200;
+}
+
+.novidades-h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+input[type="email"] {
+    width: 100%;
+    max-width: 400px; /* Limita a largura */
+    padding: 12px 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  input[type="email"]:focus {
+    border-color: #54D100; /* Cor quando clicar na caixa */
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 200px;
+  }
+
+  .cadastro-container {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .input-email {
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    width: 300px; /* Ajuste o tamanho conforme preferir */
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #1a1a1a; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto branco */
+    padding: 40px 0;
+    font-size: 0.9em;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.follow-us {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.follow-us h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    height: 30px; /* Ajuste o tamanho dos ícones conforme necessário */
+    width: auto;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons img:hover {
+    opacity: 1;
+}
+
+.links-section {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.links-section > div {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.links-section h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.links-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links-section li {
+    margin-bottom: 8px;
+}
+
+.links-section a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.links-section a:hover {
+    color: #fff;
+}
+
+/* Adaptações para telas menores */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .links-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links-section > div {
+        margin: 20px 0;
+        text-align: center;
+    }
+}
+
+/*Botão de acessibilidade*/
+#leitor {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-90%);
+  background-color: #000080;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.leitor img.icon-leitura{
+      width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 60px;
+  }
+
+  .bloco, .gympass-bloco {
+    width: 90%;
+    height: auto;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar a {
+    margin: 5px 0;
+  }
+}
+
+a:focus,
+.button:focus {
+  outline: 2px solid #54D100;
+  outline-offset: 4px;
+}
+
+/*dark mode */
+/* Estilo do botão */
+.dark-mode-toggle {
+   position: fixed;
+  top: 36%;
+  left: 0;
+  z-index: 10000;
+}
+
+/* Esconde o checkbox */
+#chk {
+  display: none;
+}
+
+.label {
+  background-color: #000080;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  height: 26px;
+  width: 25px;
+  position: relative;
+}
+
+.label img.icon-darkmode {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+#chk:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.label i {
+  color: #f1c40f;
+  font-size: 14px;
+  width: 20px;
+  text-align: center;
+}
+
+/* Aqui começa o modo escuro */
+body.dark {
+  background-color: #121212;
+  color: #eaeaea;
+}
+
+body.dark .navbar {
+  background-color: #1f1f1f;
+}
+
+body.dark a {
+  color: white;
+}
+
+body.dark .bloco,
+body.dark .gympass-bloco {
+  background-color: #3a3a3a;
+  border: 2px solid #444;
+}
+
+body.dark input,
+body.dark .button {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+body.dark .texto-preto{
+    color: #fff;
+}
+
+body.dark .plano{
+    color: #fff;
+}
+
+body.dark .tempo{
+    color: #fff;
+}
+
+body.dark .parcela{
+    color: #f5f5f5;
+}
