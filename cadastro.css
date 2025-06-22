@@ -241,3 +241,17 @@ body.dark .button {
   color: #fff;
   border: 1px solid #555;
 }
+
+/* Remove imagem nas telas pequenas */
+@media (max-width: 600px) {
+  .left-side img {
+    display: none;
+  }
+  .container {
+    padding: 15px;
+    gap: 10px;
+  }
+  .welcome-box {
+    padding: 15px;
+  }
+}

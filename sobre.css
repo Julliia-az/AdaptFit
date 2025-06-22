@@ -263,3 +263,73 @@ body.dark .button {
   color: #fff;
   border: 1px solid #555;
 }
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .NossaMissao,
+  .SobreNos {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pesquisa {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .NossaMissao,
+  .SobreNos {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+  }
+  .pesquisa {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .dados {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .frase {
+    font-size: 1.2rem;
+    max-width: 95vw;
+  }
+}
+
+@media (max-width: 500px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  .NossaMissao,
+  .SobreNos {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 8px;
+    margin-top: 20px;
+  }
+  .pesquisa {
+    gap: 10px;
+  }
+  .dados {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+  .integrantes {
+    width: 95vw;
+    height: auto;
+    min-height: 150px;
+  }
+  .footer {
+    font-size: 0.9rem;
+    padding: 8px 0;
+  }
+}

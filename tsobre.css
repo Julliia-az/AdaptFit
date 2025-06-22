@@ -1,0 +1,458 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: #555555;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+
+button, .button, input[type="submit"] {
+    border-radius: 10px;
+    background-color: #54D100;
+    margin-right: 40px;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    /* Faz a animação acontecer "lentamente", em 0.2 segundos */
+    transition: background 0.2s, transform 0.2s;
+    outline: none;
+}
+button:hover, .button:hover, input[type="submit"]:hover {
+    background-color: #3aa200;
+    transform: scale(1.05);
+}
+button:focus-visible, .button:focus-visible, input[type="submit"]:focus-visible {
+    outline: 3px solid #222;
+    outline-offset: 2px;
+}
+
+input, textarea {
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    border: 1.5px solid #bbb;
+    padding: 10px;
+    font-size: 1rem;
+    margin: 6px 0;
+    width: 100%;
+    transition: border 0.2s;
+}
+input:focus-visible, textarea:focus-visible {
+    border: 2px solid #54D100;
+    outline: none;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    margin-top: 40px;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.NossaMissao, .SobreNos {
+    border: 3px solid #54d10020;
+    border-radius: 20px;
+    width: 50%;
+    text-align: left;
+    margin-left: 20px;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(84,209,0,0.07);
+    padding: 24px 28px;
+    font-size: 1.1rem;
+    color: #222;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.NossaMissao {
+    margin-top: 120px;
+}
+.NossaMissao:hover {
+    box-shadow: 0 6px 24px rgba(84,209,0,0.13);
+    transform: scale(1.03);
+}
+.SobreNos {
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+.SobreNos:hover {
+    box-shadow: 0 6px 24px rgba(84,209,0,0.13);
+    transform: scale(1.03);
+}
+
+.pesquisas {
+    text-align: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.pesquisa {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.dados {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background: #fff;
+    margin: 10px;
+    padding: 18px 12px;
+    font-size: 1.05rem;
+    color: #222;
+    transition: box-shadow 0.2s, border 0.2s;
+}
+.dados:focus-within, .dados:hover {
+    box-shadow: 0 6px 18px rgba(84,209,0,0.15);
+    border-color: #54D100;
+}
+
+.nossa-equipe, .equipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.integrantes {
+    width: 200px;
+    height: 200px;
+    background-color: #54d100ad;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.integrantes:focus-within, .integrantes:hover {
+    box-shadow: 0 8px 24px rgba(84,209,0,0.18);
+    transform: scale(1.04);
+    outline: 2px solid #222;
+}
+
+.nome {
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    background: #54d100ad;
+    border-bottom: 1.5px solid #54D100;
+    font-size: 1.1rem;
+}
+
+.chamada {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.frase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #54D100;
+    border-radius: 10px;
+    padding: 18px;
+    width: 100%;
+    max-width: 700px;
+    font-size: 2rem;
+    margin: 0 auto 24px auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    color: #222;
+}
+
+a {
+    color: #0057b8;
+    text-decoration: underline;
+    outline: none;
+    transition: color 0.2s;
+}
+a:hover, a:focus-visible {
+    color: #3aa200;
+    text-decoration: underline;
+}
+a:focus-visible {
+    outline: 3px solid #54D100;
+    outline-offset: 2px;
+}
+
+/* Dark mode */
+body.dark {
+    background-color: #121212;
+    color: #eaeaea;
+}
+body.dark .navbar {
+    background-color: #1f1f1f;
+}
+body.dark a {
+    color: white;
+}
+body.dark .bloco,
+body.dark .gympass-bloco {
+    background-color: #3a3a3a;
+    border: 2px solid #444;
+}
+body.dark input,
+body.dark .button {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+body.dark .NossaMissao,
+body.dark .SobreNos,
+body.dark .dados,
+body.dark .integrantes,
+body.dark .frase {
+    background: #232323;
+    color: #eaeaea;
+    border-color: #54D100;
+    box-shadow: 0 4px 16px rgba(84,209,0,0.10);
+}
+body.dark .nome {
+    background: #181818;
+    color: #fff;
+    border-bottom: 1.5px solid #54D100;
+}
+body.dark a:hover, body.dark a:focus-visible {
+    color: #54D100;
+}
+
+/* Responsividade  */
+@media (max-width: 1100px) {
+    .NossaMissao, .SobreNos {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1rem;
+    }
+    .NossaMissao {
+        margin-top: 130px;
+    }
+    .SobreNos {
+        margin-top: 30px;
+    }
+    .pesquisa {
+        display: flex;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .NossaMissao, .SobreNos {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1rem;
+        padding: 18px 10px;
+    }
+    .NossaMissao {
+        margin-top: 140px;
+    }
+    .SobreNos {
+        margin-top: 30px;
+    }
+    .pesquisa {
+        display: flex;
+        gap: 32px;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        font-size: 1rem;
+    }
+    .NossaMissao, .SobreNos {
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 0.98rem;
+        padding: 18px 10px;
+    }
+    .NossaMissao {
+        margin-top: 150px;
+    }
+    .SobreNos {
+        margin-top: 30px;
+    }
+    .pesquisa {
+        flex-direction: column;
+        display: flex;
+        gap: 18px;
+    }
+    .dados {
+        width: 98%;
+        margin: 0 auto 12px auto;
+        font-size: 0.98rem;
+        padding: 12px 8px;
+    }
+    .frase {
+        font-size: 1.2rem;
+        max-width: 98vw;
+        padding: 12px 6px;
+    }
+    .integrantes {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 500px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    .NossaMissao, .SobreNos {
+        width: 100%;
+        font-size: 0.95rem;
+        padding: 10px 4px;
+    }
+    .NossaMissao {
+        margin-top: 110px;
+    }
+    .SobreNos {
+        margin-top: 30px;
+    }
+    .pesquisa {
+        gap: 8px;
+    }
+    .dados {
+        width: 100%;
+        font-size: 0.95rem;
+        padding: 8px 2px;
+    }
+    .integrantes {
+        width: 95vw;
+        min-width: 120px;
+        height: auto;
+        min-height: 120px;
+        margin: 0 auto 10px auto;
+    }
+    .footer {
+        font-size: 0.92rem;
+        padding: 10px 0;
+    }
+    .frase {
+        font-size: 1rem;
+        padding: 8px 2px;
+    }
+}
+
+/* Acessibilidade para os leitores de tela */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+/* Botão dark mode */
+.dark-mode-toggle {
+    position: fixed;
+    top: 36%;
+    left: 0;
+    background-color: #000080;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    height: 44px;
+    width: 44px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+.dark-mode-toggle,
+#leitor {
+    position: fixed;
+    left: 0;
+    background-color: #000080;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+#leitor {
+    top: 50%;
+    transform: translateY(-90%);
+}
+/* Esconde o checkbox */
+#chk {
+  display: none;
+}
+.label img.icon-darkmode {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+.dark-mode-toggle .label {
+    background: none;
+    border-radius: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
