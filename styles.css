@@ -201,50 +201,32 @@ form input {
     margin: 5px 0;
 }
 
-.blocos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
-  justify-content: center;
-  margin: 32px 0;
-  width: 100%;
-}
-.bloco, .gympass-bloco {
-  background: #fff;
-  border-radius: 20px;
-  border: 3px solid #54d10020;
-  box-shadow: 0 2px 12px rgba(84,209,0,0.07);
-  padding: 36px 40px;
-  margin: 0 auto;
-  font-size: 1.13rem;
-  color: #222;
-  transition: box-shadow 0.2s, transform 0.2s, border 0.2s;
-  width: 370px;
-  max-width: 95vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.bloco:hover, .gympass-bloco:hover {
-  box-shadow: 0 8px 32px rgba(84,209,0,0.13);
-  transform: scale(1.03);
-  border: 3px solid #54D100;
-}
-.gympass-bloco {
-  background: #f9fff4;
-  border: 3px solid #54D100;
+.bloco {
+    width: 220px; /* Ajuste o tamanho conforme necessário */
+    height: 260px; /* Ajuste o tamanho conforme necessário */
+    border: 2px solid #54D100; /* Define a cor e espessura da borda */
+    border-radius: 15px; /* Define o arredondamento dos cantos */
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui a borda e o padding no tamanho total */
+    margin: 20px;
+    display: flex; /* Usando flexbox para centralizar conteúdo */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: center; /* Centraliza horizontalmente os itens */
+    justify-content: center; /* Centraliza verticalmente os itens */
+    background-color: #f9f9f9; /* Fundo suave para o bloco */
+    transition: transform 0.2s; /* Transição suave ao passar o mouse */
 }
 
-.bloco img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 16px;
-  display: block;
-  background: #eee;
-  transition: box-shadow 0.2s;
+.bloco:hover {
+    transform: scale(1.05); /* Aumenta um pouco o tamanho do bloco ao passar o mouse */
 }
+
+.blocos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
 .plano {
     color: #333333;
     font-weight: normal;
@@ -576,10 +558,10 @@ a:focus,
 /*dark mode */
 /* Estilo do botão */
 .dark-mode-toggle {
-   position: fixed;
+  position: fixed;
   top: 36%;
   left: 0;
-  z-index: 500;
+  z-index: 10000;
 }
 
 /* Esconde o checkbox */
@@ -618,145 +600,72 @@ a:focus,
 }
 
 /* Aqui começa o modo escuro */
-/* Transforma as letras escuras em brancas no modo escuro */
-body.dark .bloco,
-body.dark .gympass-bloco,
-body.dark p,
-body.dark span,
-body.dark li,
-body.dark label,
-body.dark div,
-body.dark b,
-body.dark strong,
-body.dark h1,
-body.dark h2,
-body.dark h3,
-body.dark h4,
-body.dark h5,
-body.dark h6 {
-  color: #fff;
-}
-
-/* Mantém o verde nos textos que já são verdes */
-.fit, .preco, .texto-verde,.gympass, body.dark .verde, body.dark .green, body.dark .texto-verde {
-  color: #54D100 !important;
-}
 body.dark {
   background-color: #121212;
   color: #eaeaea;
 }
 
 body.dark .navbar {
-  background-color: #1f1f1f;
+  background-color: rgba(31, 31, 31, 0.5); /* mesma cor, mas só o fundo transparente */
 }
 
 body.dark a {
   color: white;
 }
 
+body.dark .texto-preto {
+    color: #ffffff;
+    font-size: 30px;
+}
+
 body.dark .bloco,
 body.dark .gympass-bloco {
   background-color: #3a3a3a;
-  border: 2px solid #444;
+  border: 2px solid #616161;
 }
 
-body.dark input,
-body.dark .button {
-  background-color: #333;
-  color: #fff;
-  border: 1px solid #555;
-}
-
-/* Responsividade */
-
-   @media (max-width: 900px) {
-  .blocos {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .bloco {
-    width: 80%;
-    min-width: 220px;
-    max-width: 400px;
-    margin: 10px auto;
-    height: auto;
-  }
-  .gympass-bloco {
-    width: 95%;
-    min-width: 220px;
-    max-width: 600px;
-    height: auto;
-    margin: 10px auto;
-    padding: 15px;
-  }
-}
-
-@media (max-width: 768px) {
-  .container { width: 95%; }
-  .links-section { flex-direction: column; align-items: center; }
-  .links-section > div { margin: 20px 0; text-align: center; }
-  .title { font-size: 60px; }
-  .bloco, .gympass-bloco { width: 90%; height: auto; }
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    left: -100vw;
-    width: 70vw;
-    height: 100vh;
-    background: #222;
-    transition: left 0.3s;
-    z-index: 2000;
-  }
-  .navbar.open { left: 0; }
-  .navbar a {
-    margin: 20px 0;
+/* PLANOS */
+body.dark .plano{
+    color: #ffffff;
+    font-weight: normal;
+    text-align: center;
     font-size: 1.2em;
+    margin: 5px 0;
+}
+
+body.dark .tempo{
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+body.dark .parcela{
+    font-weight: normal;
+    text-align: center;
+    color: #ffffff;
+    margin: 5px 0;
+} 
+
+body.dark .treine{
+    color: #ffffff;
+}
+
+body.dark input[type="email"] {
     width: 100%;
-    display: block;
+    max-width: 400px; /* Limita a largura */
+    padding: 12px 16px;
+    border: 2px solid #848484;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color:#3a3a3a ;
+    
   }
-  .hamburger {
-    display: flex;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 2001;
-  }
-  body.menu-open { overflow: hidden; }
-  .navbar { background: #222; }
-  .dark-mode-toggle { top: 30%; left: 0; }
-  .label { width: 40px; height: 40px; }
-  .label img.icon-darkmode { width: 32px; height: 32px; }
-}
 
-@media (max-width: 600px) {
-  .blocos { flex-direction: column; align-items: center; gap: 15px; }
-  .bloco {
-    width: 98%;
-    min-width: 180px;
-    max-width: 100%;
-    margin: 8px 0;
-    padding: 10px;
+body.dark input[type="email"]:focus {
+    border-color: #54D100; /* Cor quando clicar na caixa */
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
   }
-  .gympass-bloco {
-    width: 100%;
-    min-width: 180px;
-    max-width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-  }
-}
-
-@media (max-width: 500px) {
-  .dark-mode-toggle { top: 25%; }
-  .label { width: 35px; height: 35px; }
-  .label img.icon-darkmode { width: 28px; height: 28px; }
-}
-
-@media (max-width: 350px) {
-  .dark-mode-toggle { top: 20%; }
-  .label { width: 30px; height: 30px; }
-  .label img.icon-darkmode { width: 24px; height: 24px; }
-}
