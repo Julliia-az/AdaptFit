@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Signup</title>
+    <link rel="stylesheet" href="login.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!--dark mode -->
+    <div class="dark-mode-toggle">
+        <input type="checkbox" id="chk" />
+        <label for="chk" class="label">
+            <img class="icon-darkmode" src="Imagens/dia-e-noite.png" alt="Modo escuro" />
+        </label>
+    </div>
+
+    <!--botão de leitura -->
+    <button id="leitor" aria-label="Ativar leitor de tela"><img src="Imagens/olho.png" alt=""></button>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="Imagens/logo_AdaptFit.png" alt="Logo AdaptFit">
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="form-box login">
+            <form action="#">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required />
+                    <i class="bx bxs-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required />
+                    <i class="bx bxs-lock-alt"></i>
+                </div>
+                <div class="forgot-link">
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p>ou faça login com plataformas sociais</p>
+                <div class="social-icons">
+                    <a href="#"><i class="bx bxl-google"></i></a>
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-github"></i></a>
+                    <a href="#"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <form action="#">
+                <h1>Cadastrar</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required />
+                    <i class="bx bxs-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Email" required />
+                    <i class="bx bxs-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required />
+                    <i class="bx bxs-lock-alt"></i>
+                </div>
+                <button type="submit" class="btn">Cadastrar</button>
+                <p>ou faça login com plataformas sociais</p>
+                <div class="social-icons">
+                    <a href="#"><i class="bx bxl-google"></i></a>
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-github"></i></a>
+                    <a href="#"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </form>
+        </div>
+
+        <div class="toggle-box">
+            <div class="toggle-panel toggle-left">
+                <h1>Olá, bem-vindo!!</h1>
+                <p>Não tem uma conta?</p>
+                <button class="btn register-btn">Cadastre-se</button>
+            </div>
+
+            <div class="toggle-panel toggle-right">
+                <h1>Bem-vindo de volta!</h1>
+                <p>Já tem uma conta?</p>
+                <button class="btn login-btn">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // página de login/cadastro
+        const container = document.querySelector('.container');
+        const registerBtn = document.querySelector('.register-btn');
+        const loginBtn = document.querySelector('.login-btn');
+
+        registerBtn.addEventListener('click', () => {
+            container.classList.add('active');
+        })
+
+        loginBtn.addEventListener('click', () => {
+            container.classList.remove('active');
+        })
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

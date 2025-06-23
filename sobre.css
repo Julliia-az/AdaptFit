@@ -1,166 +1,167 @@
 body {
-     font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
-header 
-{
-    position: fixed;
-    top: 0;
-    background-color: #555555;
-    color: #fff;
-    padding: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+header {
+  position: fixed;
+  top: 0;
+  background-color: #555555;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h2{
-    font-size: 40px;
+h2 {
+  font-size: 40px;
 }
 
-button{
-    border-radius: 10px;
-    background-color: #54D100;
-    margin-right: 40px;
+button {
+  border-radius: 10px;
+  background-color: #54D100;
+  margin-right: 40px;
 }
 
-button:hover{
-    background-color: #3aa200;
-    transform: scale(1.05);
+button:hover {
+  background-color: #3aa200;
+  transform: scale(1.05);
 }
 
-input{
-    border-radius: 10px;
-    background-color: #f4f4f4;
+input {
+  border-radius: 10px;
+  background-color: #f4f4f4;
 }
 
-.footer{
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: relative;
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: relative;
 }
-       
+
 .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
-    height: 30px;
-    margin-right: 10px;
+  height: 30px;
+  margin-right: 10px;
 }
 
 .NossaMissao {
-    border: 3px solid #54d10020;
-    border-radius: 20px;
-    width: 50%;
-    text-align: left;
-    margin-left: 20px;
-    margin-top: 90px;
+  border: 3px solid #54d10020;
+  border-radius: 20px;
+  width: 50%;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 90px;
 }
 
-.NossaMissao:hover{
-    transform: scale(1.05);
-    margin-left: 25px;
+.NossaMissao:hover {
+  transform: scale(1.05);
+  margin-left: 25px;
 }
 
 .SobreNos {
-    border: 3px solid #54d10020;
-    border-radius: 20px;
-    width: 50%;
-    text-align: left;
-    margin-left: auto;
-    margin-right: 20px; 
-    margin-top: 30px;
+  border: 3px solid #54d10020;
+  border-radius: 20px;
+  width: 50%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 30px;
 }
 
 .SobreNos:hover {
-    transform: scale(1.05);
-    margin-right: 25px;
+  transform: scale(1.05);
+  margin-right: 25px;
 }
 
 .pesquisas {
-    text-align: center;
-    margin: 20px 0;
-    flex-wrap: wrap;
+  text-align: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
 }
 
 .pesquisa {
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-    /* Espaço entre os blocos */
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  /* Espaço entre os blocos */
 }
 
 .dados {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    width: 280px; /* Largura do bloco */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 280px;
+  /* Largura do bloco */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
-.nossa-equipe{
-    display: flex;
-    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
+.nossa-equipe {
+  display: flex;
+  flex-wrap: wrap;
+  /* Permite quebrar linha em telas menores */
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
 }
 
-.equipe{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+.equipe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
-.integrantes{
-    width: 200px;
-    height: 200px;
-    background-color: #54d100ad;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.integrantes {
+  width: 200px;
+  height: 200px;
+  background-color: #54d100ad;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.nome{
-    color: #FFFFFF;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
+.nome {
+  color: #FFFFFF;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
 }
 
-.chamada{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.chamada {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .frase {
-  display: flex;               
-  align-items: center;        
-  justify-content: center;     
-  flex-direction: column;      
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   border: 1px solid #54D100;
   border-radius: 10px;
-  padding: 10px;              
+  padding: 10px;
   width: 100%;
-  max-width: 700px;            
-  font-size: 2rem;             
-  margin: 0 auto;              
-  text-align: center;         
+  max-width: 700px;
+  font-size: 2rem;
+  margin: 0 auto;
+  text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #f9f9f9;
   transition: all 0.3s ease;
@@ -168,7 +169,7 @@ input{
 
 @media (max-width: 500px) {
   .frase {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     padding: 15px;
   }
 }
@@ -187,8 +188,8 @@ input{
   z-index: 1000;
 }
 
-.leitor img.icon-leitura{
-      width: 24px;
+.leitor img.icon-leitura {
+  width: 24px;
   height: 24px;
   object-fit: contain;
 }
@@ -196,7 +197,7 @@ input{
 /*dark mode */
 /* Estilo do botão */
 .dark-mode-toggle {
-   position: fixed;
+  position: fixed;
   top: 36%;
   left: 0;
   z-index: 10000;
@@ -226,7 +227,7 @@ input{
   object-fit: contain;
 }
 
-#chk:checked + .label .ball {
+#chk:checked+.label .ball {
   transform: translateX(24px);
 }
 
@@ -266,12 +267,14 @@ body.dark .button {
 
 /* Responsividade */
 @media (max-width: 900px) {
+
   .NossaMissao,
   .SobreNos {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
+
   .pesquisa {
     gap: 40px;
   }
@@ -283,6 +286,7 @@ body.dark .button {
     align-items: flex-start;
     padding: 10px;
   }
+
   .NossaMissao,
   .SobreNos {
     width: 95%;
@@ -290,14 +294,17 @@ body.dark .button {
     margin-right: auto;
     font-size: 1rem;
   }
+
   .pesquisa {
     flex-direction: column;
     gap: 20px;
   }
+
   .dados {
     width: 95%;
     margin: 0 auto;
   }
+
   .frase {
     font-size: 1.2rem;
     max-width: 95vw;
@@ -308,6 +315,7 @@ body.dark .button {
   h2 {
     font-size: 1.5rem;
   }
+
   .NossaMissao,
   .SobreNos {
     width: 100%;
@@ -315,19 +323,23 @@ body.dark .button {
     padding: 8px;
     margin-top: 20px;
   }
+
   .pesquisa {
     gap: 10px;
   }
+
   .dados {
     width: 100%;
     font-size: 0.95rem;
     padding: 8px;
   }
+
   .integrantes {
     width: 95vw;
     height: auto;
     min-height: 150px;
   }
+
   .footer {
     font-size: 0.9rem;
     padding: 8px 0;

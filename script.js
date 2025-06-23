@@ -1,15 +1,15 @@
 function irPagina(id) { //rola ate a pag desejada
-    let elemento = document.getElementById(id);
-    if (elemento) {
-        elemento.scrollIntoView({ behavior: "smooth" });
-    }
+  let elemento = document.getElementById(id);
+  if (elemento) {
+    elemento.scrollIntoView({ behavior: "smooth" });
+  }
 }
 
 
-document.getElementById('contatoForm')?.addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita o envio do formulário
-    alert('E-mail enviado com sucesso!');
-    this.reset(); // Limpa o formulário
+document.getElementById('contatoForm')?.addEventListener('submit', function (event) {
+  event.preventDefault(); // Evita o envio do formulário
+  alert('E-mail enviado com sucesso!');
+  this.reset(); // Limpa o formulário
 });
 
 
@@ -29,7 +29,7 @@ botaoLeitor.addEventListener('click', () => {
   icone.src = modoLeituraAtivo ? 'Imagens/x.png' : 'Imagens/olho.png';
 });
 
-document.addEventListener('click', function(e) {
+document.addEventListener('click', function (e) {
 
   if (!modoLeituraAtivo || e.target.closest('#leitor')) return;
 
@@ -52,3 +52,5 @@ const chk = document.getElementById('chk');
 chk.addEventListener('change', () => {
   document.body.classList.toggle('dark');
 });
+
+

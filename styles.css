@@ -5,21 +5,28 @@
     background-repeat: no-repeat;
     height: 100vh;
     margin: 0;
-    position: relative; /* Para permitir a sobreposição */
-    padding-top: 80px; /* Espaço para o cabeçalho fixo */
+    position: relative;
+    /* Para permitir a sobreposição */
+    padding-top: 80px;
+    /* Espaço para o cabeçalho fixo */
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
 }
 
 .overlay {
-    position: absolute; /* Para cobrir a imagem de fundo */
+    position: absolute;
+    /* Para cobrir a imagem de fundo */
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Preto com 50% de opacidade */
-    z-index: 1; /* A sobreposição deve estar acima da imagem de fundo */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Preto com 50% de opacidade */
+    z-index: 1;
+    /* A sobreposição deve estar acima da imagem de fundo */
 }
 
 /* NAVBAR */
@@ -33,30 +40,33 @@
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-  }
-  
-  .navbar a {
+}
+
+.navbar a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
     font-weight: 600;
     transition: color 0.3s ease;
-  }
-  
-  .navbar a:hover {
+}
+
+.navbar a:hover {
     color: #54D100;
-  }
+}
 
 .content {
-    position: relative; /* Para garantir que o conteúdo apareça acima da sobreposição */
-    z-index: 2; /* O conteúdo deve estar acima da sobreposição */
+    position: relative;
+    /* Para garantir que o conteúdo apareça acima da sobreposição */
+    z-index: 2;
+    /* O conteúdo deve estar acima da sobreposição */
     color: white;
     text-align: center;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* conteúdo empilha verticalmente */
+    flex-direction: column;
+    /* conteúdo empilha verticalmente */
 }
 
 .title {
@@ -65,10 +75,14 @@
     font-weight: bold;
     font-style: italic;
     text-shadow:
-        2px 2px 0px black, /* Sombra 1 (direita e abaixo) */
-        -2px -2px 0px black, /* Sombra 2 (esquerda e acima) */
-        2px -2px 0px black, /* Sombra 3 (direita e acima) */
-        -2px 2px 0px black; /* Sombra 4 (esquerda e abaixo) */
+        2px 2px 0px black,
+        /* Sombra 1 (direita e abaixo) */
+        -2px -2px 0px black,
+        /* Sombra 2 (esquerda e acima) */
+        2px -2px 0px black,
+        /* Sombra 3 (direita e acima) */
+        -2px 2px 0px black;
+    /* Sombra 4 (esquerda e abaixo) */
 }
 
 .adapt {
@@ -131,15 +145,19 @@ header {
     width: 80%;
     max-width: 750px;
     margin: 0 auto;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra para destaque */
-    text-align: center; /* Centraliza o input dentro da div */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    /* Adiciona uma leve sombra para destaque */
+    text-align: center;
+    /* Centraliza o input dentro da div */
 }
 
 .search-background input {
-    width: 40%; /* Reduzir a largura do prompt de pesquisa */
+    width: 40%;
+    /* Reduzir a largura do prompt de pesquisa */
     padding: 15px;
     border: none;
-    border-radius: 50px; /* Manter o arredondamento do input */
+    border-radius: 50px;
+    /* Manter o arredondamento do input */
     outline: none;
 }
 
@@ -158,7 +176,8 @@ header {
 .example {
     border: 1px solid #ccc;
     border-radius: 10px;
-    width: 250px; /* Largura do bloco */
+    width: 250px;
+    /* Largura do bloco */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
@@ -202,23 +221,36 @@ form input {
 }
 
 .bloco {
-    width: 220px; /* Ajuste o tamanho conforme necessário */
-    height: 260px; /* Ajuste o tamanho conforme necessário */
-    border: 2px solid #54D100; /* Define a cor e espessura da borda */
-    border-radius: 15px; /* Define o arredondamento dos cantos */
-    padding: 20px; /* Espaçamento interno */
-    box-sizing: border-box; /* Inclui a borda e o padding no tamanho total */
+    width: 220px;
+    /* Ajuste o tamanho conforme necessário */
+    height: 260px;
+    /* Ajuste o tamanho conforme necessário */
+    border: 2px solid #54D100;
+    /* Define a cor e espessura da borda */
+    border-radius: 15px;
+    /* Define o arredondamento dos cantos */
+    padding: 20px;
+    /* Espaçamento interno */
+    box-sizing: border-box;
+    /* Inclui a borda e o padding no tamanho total */
     margin: 20px;
-    display: flex; /* Usando flexbox para centralizar conteúdo */
-    flex-direction: column; /* Alinha os itens verticalmente */
-    align-items: center; /* Centraliza horizontalmente os itens */
-    justify-content: center; /* Centraliza verticalmente os itens */
-    background-color: #f9f9f9; /* Fundo suave para o bloco */
-    transition: transform 0.2s; /* Transição suave ao passar o mouse */
+    display: flex;
+    /* Usando flexbox para centralizar conteúdo */
+    flex-direction: column;
+    /* Alinha os itens verticalmente */
+    align-items: center;
+    /* Centraliza horizontalmente os itens */
+    justify-content: center;
+    /* Centraliza verticalmente os itens */
+    background-color: #f9f9f9;
+    /* Fundo suave para o bloco */
+    transition: transform 0.2s;
+    /* Transição suave ao passar o mouse */
 }
 
 .bloco:hover {
-    transform: scale(1.05); /* Aumenta um pouco o tamanho do bloco ao passar o mouse */
+    transform: scale(1.05);
+    /* Aumenta um pouco o tamanho do bloco ao passar o mouse */
 }
 
 .blocos {
@@ -259,14 +291,14 @@ form input {
 }
 
 .gympass-container {
-    display: flex; 
-    justify-content: center; 
-    width: 100%; 
-    margin-top: 20px; 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
 }
 
 .gympass-bloco {
-    width: 1060px; 
+    width: 1060px;
     height: 150px;
     border: 2px solid #54D100;
     border-radius: 15px;
@@ -290,20 +322,21 @@ form input {
     font-size: 1.5em;
     margin: 5px 0;
 }
-    
-    .treine{
-        color: #000000;
-    }
 
-    .gympass{
-        color: #54D100;
-    }
+.treine {
+    color: #000000;
+}
+
+.gympass {
+    color: #54D100;
+}
 
 
 /* EXPERIÊNCIA */
-  .examples-e {
+.examples-e {
     display: flex;
-    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+    flex-wrap: wrap;
+    /* Permite quebrar linha em telas menores */
     justify-content: center;
     gap: 30px;
     margin-top: 20px;
@@ -321,7 +354,7 @@ form input {
     background-color: #54d100ad;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -330,7 +363,8 @@ form input {
 .example-e img {
     width: 100%;
     height: 200px;
-    object-fit: cover; /* Corta para manter a proporção */
+    object-fit: cover;
+    /* Corta para manter a proporção */
 }
 
 .experiencia {
@@ -364,53 +398,58 @@ form input {
     background-color: #3aa200;
 }
 
-.novidades-h3{
+.novidades-h3 {
     text-align: center;
     font-size: 25px;
 }
 
 input[type="email"] {
     width: 100%;
-    max-width: 400px; /* Limita a largura */
+    max-width: 400px;
+    /* Limita a largura */
     padding: 12px 16px;
     border: 2px solid #ccc;
     border-radius: 8px;
     font-size: 16px;
     outline: none;
     transition: border-color 0.3s, box-shadow 0.3s;
-  }
-  
-  input[type="email"]:focus {
-    border-color: #54D100; /* Cor quando clicar na caixa */
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
-  }
+}
 
-  .form-container {
+input[type="email"]:focus {
+    border-color: #54D100;
+    /* Cor quando clicar na caixa */
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+.form-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     min-height: 200px;
-  }
+}
 
-  .cadastro-container {
+.cadastro-container {
     display: block;
     text-align: center;
     margin-top: 20px;
-  }
-  
-  .input-email {
+}
+
+.input-email {
     padding: 12px 20px;
     border: 1px solid #ccc;
     border-radius: 25px;
     outline: none;
-    width: 300px; /* Ajuste o tamanho conforme preferir */
+    width: 300px;
+    /* Ajuste o tamanho conforme preferir */
     margin-bottom: 10px;
-  }
-  
-  footer {
-    background-color: #1a1a1a; /* Cor de fundo escura */
-    color: #fff; /* Cor do texto branco */
+}
+
+footer {
+    background-color: #1a1a1a;
+    /* Cor de fundo escura */
+    color: #fff;
+    /* Cor do texto branco */
     padding: 40px 0;
     font-size: 0.9em;
 }
@@ -442,7 +481,8 @@ input[type="email"] {
 }
 
 .social-icons img {
-    height: 30px; /* Ajuste o tamanho dos ícones conforme necessário */
+    height: 30px;
+    /* Ajuste o tamanho dos ícones conforme necessário */
     width: auto;
     opacity: 0.7;
     transition: opacity 0.3s ease;
@@ -459,7 +499,7 @@ input[type="email"] {
     margin-bottom: 20px;
 }
 
-.links-section > div {
+.links-section>div {
     flex: 1;
     margin: 0 20px;
 }
@@ -502,7 +542,7 @@ input[type="email"] {
         align-items: center;
     }
 
-    .links-section > div {
+    .links-section>div {
         margin: 20px 0;
         text-align: center;
     }
@@ -510,107 +550,109 @@ input[type="email"] {
 
 /*Botão de acessibilidade*/
 #leitor {
-  position: fixed;
-  top: 50%;
-  left: 0;
-  transform: translateY(-90%);
-  background-color: #000080;
-  align-items: center;
-  padding: 10px;
-  border: none;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-  z-index: 1000;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-90%);
+    background-color: #000080;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    z-index: 1000;
 }
 
-.leitor img.icon-leitura{
-      width: 24px;
-  height: 24px;
-  object-fit: contain;
+.leitor img.icon-leitura {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
 
 @media (max-width: 768px) {
-  .title {
-    font-size: 60px;
-  }
+    .title {
+        font-size: 60px;
+    }
 
-  .bloco, .gympass-bloco {
-    width: 90%;
-    height: auto;
-  }
+    .bloco,
+    .gympass-bloco {
+        width: 90%;
+        height: auto;
+    }
 
-  .navbar {
-    flex-direction: column;
-    padding: 10px;
-  }
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
 
-  .navbar a {
-    margin: 5px 0;
-  }
+    .navbar a {
+        margin: 5px 0;
+    }
 }
 
 a:focus,
 .button:focus {
-  outline: 2px solid #54D100;
-  outline-offset: 4px;
+    outline: 2px solid #54D100;
+    outline-offset: 4px;
 }
 
 /*dark mode */
 /* Estilo do botão */
 .dark-mode-toggle {
-  position: fixed;
-  top: 36%;
-  left: 0;
-  z-index: 10000;
+    position: fixed;
+    top: 36%;
+    left: 0;
+    z-index: 10000;
 }
 
 /* Esconde o checkbox */
 #chk {
-  display: none;
+    display: none;
 }
 
 .label {
-  background-color: #000080;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  height: 26px;
-  width: 25px;
-  position: relative;
+    background-color: #000080;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 26px;
+    width: 25px;
+    position: relative;
 }
 
 .label img.icon-darkmode {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
 
-#chk:checked + .label .ball {
-  transform: translateX(24px);
+#chk:checked+.label .ball {
+    transform: translateX(24px);
 }
 
 .label i {
-  color: #f1c40f;
-  font-size: 14px;
-  width: 20px;
-  text-align: center;
+    color: #f1c40f;
+    font-size: 14px;
+    width: 20px;
+    text-align: center;
 }
 
 /* Aqui começa o modo escuro */
 body.dark {
-  background-color: #121212;
-  color: #eaeaea;
+    background-color: #121212;
+    color: #eaeaea;
 }
 
 body.dark .navbar {
-  background-color: rgba(31, 31, 31, 0.5); /* mesma cor, mas só o fundo transparente */
+    background-color: rgba(31, 31, 31, 0.5);
+    /* mesma cor, mas só o fundo transparente */
 }
 
 body.dark a {
-  color: white;
+    color: white;
 }
 
 body.dark .texto-preto {
@@ -620,12 +662,12 @@ body.dark .texto-preto {
 
 body.dark .bloco,
 body.dark .gympass-bloco {
-  background-color: #3a3a3a;
-  border: 2px solid #616161;
+    background-color: #3a3a3a;
+    border: 2px solid #616161;
 }
 
 /* PLANOS */
-body.dark .plano{
+body.dark .plano {
     color: #ffffff;
     font-weight: normal;
     text-align: center;
@@ -633,7 +675,7 @@ body.dark .plano{
     margin: 5px 0;
 }
 
-body.dark .tempo{
+body.dark .tempo {
     color: #ffffff;
     font-weight: bold;
     text-align: center;
@@ -641,31 +683,33 @@ body.dark .tempo{
     margin: 5px 0;
 }
 
-body.dark .parcela{
+body.dark .parcela {
     font-weight: normal;
     text-align: center;
     color: #ffffff;
     margin: 5px 0;
-} 
+}
 
-body.dark .treine{
+body.dark .treine {
     color: #ffffff;
 }
 
 body.dark input[type="email"] {
     width: 100%;
-    max-width: 400px; /* Limita a largura */
+    max-width: 400px;
+    /* Limita a largura */
     padding: 12px 16px;
     border: 2px solid #848484;
     border-radius: 8px;
     font-size: 16px;
     outline: none;
     transition: border-color 0.3s, box-shadow 0.3s;
-    background-color:#3a3a3a ;
-    
-  }
+    background-color: #3a3a3a;
+
+}
 
 body.dark input[type="email"]:focus {
-    border-color: #54D100; /* Cor quando clicar na caixa */
+    border-color: #54D100;
+    /* Cor quando clicar na caixa */
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
-  }
+}
