@@ -114,20 +114,8 @@ body {
 
 /* Aqui começa o modo escuro */
 body.dark {
-  background-color: #121212;
-  color: #eaeaea;
-}
+  background: linear-gradient(90deg, #464646, #446741);
 
-body.dark .navbar {
-  background-color: #1f1f1f;
-}
-
-
-
-body.dark .bloco,
-body.dark .gympass-bloco {
-  background-color: #3a3a3a;
-  border: 2px solid #444;
 }
 
 body.dark input,
@@ -140,6 +128,14 @@ body.dark .button {
 body.dark .container,
 body.dark .form-box {
   background-color: #121212;
+}
+
+body.dark .input-box input,
+body.dark .container h1,
+body.dark .container p,
+body.dark .forgot-link a,
+body.dark .social-icons a {
+  color: #f5f5f5;
 }
 
 
