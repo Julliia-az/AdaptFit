@@ -458,25 +458,6 @@ body.dark a:focus-visible {
     border: 0;
 }
 
-/* Botão dark mode */
-.dark-mode-toggle {
-    position: fixed;
-    top: 36%;
-    left: 0;
-    background-color: #000080;
-    align-items: center;
-    padding: 10px;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    z-index: 10000;
-    display: flex;
-    justify-content: center;
-    height: 44px;
-    width: 44px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-}
-
 .dark-mode-toggle,
 #leitor {
     position: fixed;
@@ -494,6 +475,26 @@ body.dark a:focus-visible {
     width: 44px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
+
+/* Botão dark mode */
+.dark-mode-toggle {
+    position: fixed;
+    top: 36%;
+    left: 0;
+    background-color: #000080;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    height: 26px;
+    width: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
 
 #leitor {
     top: 50%;
