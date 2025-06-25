@@ -593,6 +593,7 @@ footer {
 a:focus,
 .button:focus {
     outline: 2px solid #54D100;
+    border-radius: 2px;
     outline-offset: 4px;
 }
 
@@ -620,6 +621,7 @@ a:focus,
     padding: 10px;
     height: 26px;
     width: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     position: relative;
 }
 
