@@ -28,42 +28,54 @@
   <!-- carrossel -->
   <div class="content">
 
-      <div class="carousel">
-        <div class="carousel-item active">
-          <img src="Imagens/Imagem_Inicio.png" alt="Imagem 1">
-        </div>
-        <div class="carousel-item">
-          <img src="Imagens/imagem.carrocel4.avif" alt="Imagem 2">
-        </div>
-        <div class="carousel-item">
-          <img src="Imagens/imagem.carrocel3.avif" alt="Imagem 3">
-        </div>
-        <div class="caption">AQUI TODOS TREINAM</div>
-
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    <div class="carousel">
+      <div class="carousel-item active">
+        <img src="Imagens/Imagem_Inicio.png" alt="Imagem 1">
       </div>
+      <div class="carousel-item">
+        <img src="Imagens/imagem.carrocel4.avif" alt="Imagem 2">
+      </div>
+      <div class="carousel-item">
+        <img src="Imagens/imagem.carrocel3.avif" alt="Imagem 3">
+      </div>
+      <div class="caption">AQUI TODOS TREINAM</div>
+
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
     </div>
+  </div>
 
   <!-- Inicio - Página 1 -->
   <!-- <section class="inicio">
     <div class="overlay"></div> -->
-    <nav class="navbar">
-      <div>
-        <a href="#">INÍCIO</a>
-        <a href="sobreNos.html">SOBRE NÓS</a>
-        <a id="p2" href="javascript:void(0);" onclick="irPagina('encontrar')">ENCONTRAR ACADEMIA</a>
-        <a id="p3" href="javascript:void(0);" onclick="irPagina('planos')">PLANOS</a>
-        <a id="p4" href="javascript:void(0);" onclick="irPagina('experiencia')">EXPERIÊNCIA</a>
-        <!-- <a id="p5" href="cadastro.html">ÁREA DO CLIENTE</a> -->
-        <a id="p6" href="login.html">LOGIN</a>
-      </div>
-    </nav>
-      <!-- <div>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="Imagens/logo_AdaptFit.png" alt="Logo AdaptFit">
+      </a>
+    </div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="hamburger" aria-label="Abrir menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <div class="navbar-links">
+      <a href="#">INÍCIO</a>
+      <a href="sobreNos.html">SOBRE NÓS</a>
+      <a id="p2" href="javascript:void(0);" onclick="irPagina('encontrar')">ENCONTRAR ACADEMIA</a>
+      <a id="p3" href="javascript:void(0);" onclick="irPagina('planos')">PLANOS</a>
+      <a id="p4" href="javascript:void(0);" onclick="irPagina('experiencia')">EXPERIÊNCIA</a>
+      <!-- <a id="p5" href="cadastro.html">ÁREA DO CLIENTE</a> -->
+      <a id="p6" href="login.html">LOGIN</a>
+      <!-- <a href="#">MENU FUTURO</a> -->
+    </div>
+  </nav>
+  <!-- <div>
         <a href="#">MENU FUTURO</a>
 
       </div> -->
-    <!-- <div class="content">
+  <!-- <div class="content">
       <h1 class="title">
         <span class="adapt">Adapt</span><span class="fit">Fit</span>
       </h1>

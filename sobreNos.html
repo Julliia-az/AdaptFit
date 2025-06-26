@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="sobreNos.css" />
+    <title>Pesquisa - AdaptFit</title>
+</head>
+
+<body>
+    <!-- Botão dark mode -->
+    <div class="dark-mode-toggle">
+        <input type="checkbox" id="chk" />
+        <label for="chk" class="label">
+            <img class="icon-darkmode" src="Imagens/dia-e-noite.png" alt="Modo escuro" />
+        </label>
+    </div>
+
+    <!-- Botão leitor de tela -->
+    <button id="leitor" aria-label="Ativar leitor de tela"><img src="Imagens/olho.png" alt="" /></button>
+
+    <!-- Navbar fixa -->
+    <nav class="navbar">
+        <div>
+            <a href="index.html">INÍCIO</a>
+            <a href="sobre.html">SOBRE NÓS</a>
+            <a id="p6" href="login.html">LOGIN</a>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main class="pagina-pesquisas">
+
+        <div class="dados">
+            <div class="texto">
+                <h2>Público-Alvo</h2>
+                <p>O Brasil possui mais de <strong>45 milhões</strong> de pessoas com algum tipo de deficiência, sendo
+                    <strong>13 milhões</strong> com deficiência física.
+                </p>
+                <p><strong>Condições mais comuns:</strong> paraplegia, tetraplegia, hemiplegia, monoplegia, ostomia,
+                    amputações,
+                    paralisia cerebral, nanismo, entre outras.</p>
+            </div>
+            <div class="imagem">
+                <img src="Imagens/img_publiAlvo.jpg" alt="Público-Alvo AdaptFit" />
+            </div>
+        </div>
+
+        <!-- <div class="dados">
+            <div class="imagem">
+                <img src="Imagens/certificate.png" alt="Selo AdaptFit" />
+            </div>
+            <div class="texto">
+                <h2>🌼 Selo AdaptFit</h2>
+                <p>Selo AdaptFit: critérios, benefícios e processo de certificação...</p>
+            </div>
+        </div> -->
+
+        <div class="dados">
+            <div class="texto">
+                <h2>Selo AdaptFit - Critérios</h2>
+                <ul>
+                    <li>Acessibilidade física (rampas, piso tátil, elevadores)</li>
+                    <li>Equipamentos adaptados/adaptáveis</li>
+                    <li>Profissionais capacitados</li>
+                    <li>Atendimento personalizado</li>
+                    <li>Certificado físico e digital</li>
+                </ul>
+            </div>
+            <div class="imagem">
+                <img src="Imagens/logo.png" alt="Ícone de acessibilidade" />
+            </div>
+        </div>
+
+        <div class="dados">
+            <div class="imagem">
+                <img src="Imagens/img_fisioterapia.jpg" alt="Fisioterapia Integrada" />
+            </div>
+            <div class="texto">
+                <h2>Fisioterapia Integrada</h2>
+                <ul>
+                    <li><strong>Com treino:</strong> Fisioterapeuta e educador físico juntos</li>
+                    <li><strong>Consultoria:</strong> Avaliação inicial + reavaliações</li>
+                    <li><strong>Espaço próprio:</strong> Sessões particulares (convênio/SUS)</li>
+                    <li><strong>Vantagens:</strong> Fidelização e diferencial competitivo</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="dados">
+            <div class="texto">
+                <h2>Salas Especiais</h2>
+                <ul>
+                    <li><strong>Terapias Funcionais:</strong> Fisioterapia, TO, psicomotricidade</li>
+                    <li><strong>Coletivas Inclusivas:</strong> Yoga, dança, pilates</li>
+                    <li><strong>Sala Sensorial:</strong> Estímulos para TEA e def. intelectual</li>
+                    <li><strong>Atendimento Individual:</strong> Psicologia, fono e apoio à família</li>
+                </ul>
+            </div>
+            <div class="imagem">
+                <img src="Imagens/img_terapia.jpg" alt="Salas Especiais" />
+            </div>
+        </div>
+
+        <!-- <div class="dados reverse">
+            <div class="imagem">
+                <img src="Imagens/academias-mundo.png" alt="Academias pelo Mundo" />
+            </div>
+            <div class="texto">
+                <h2>🌍 Academias pelo Mundo</h2>
+                <ul>
+                    <li><strong>Special Strong (EUA):</strong> Para todas as deficiências</li>
+                    <li><strong>Adaptive Training Foundation:</strong> Para veteranos</li>
+                    <li><strong>Worldwide Deaf Gym (UK):</strong> Acessível com Libras</li>
+                    <li><strong>Neurokinex (UK):</strong> Reabilitação com alta tecnologia</li>
+                </ul>
+            </div>
+        </div> -->
+
+        <!-- <div class="dados">
+            <div class="texto">
+                <h2>🌟 Iniciativas no Brasil</h2>
+                <ul>
+                    <li><strong>São Carlos (SP):</strong> Aparelhos adaptados ao ar livre</li>
+                    <li><strong>Guará (SP):</strong> Espaço inclusivo no ginásio</li>
+                    <li><strong>SESC:</strong> Unidades com acessibilidade e inclusão</li>
+                </ul>
+            </div>
+            <div class="imagem">
+                <img src="Imagens/iniciativas-brasil.png" alt="Iniciativas no Brasil" />
+            </div>
+        </div> -->
+
+        <section class="chamada">
+            <br><br>
+            <h2><span class="texto-verde">Gostou?</span> Vem fazer parte dessa <span class="texto-verde">missão</span>
+                você também!</h2>
+            <div class="frase">"Aqui todo corpo tem espaço para se mover!"</div>
+            <a href="login.html"><button class="btn register-btn">Quero fazer parte dessa missão!</button></a>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 AdaptFit. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,103 +1,181 @@
 /* carrossel */
 .inicio {
-  /* background-image: url('Imagens/Imagem_Inicio.png'); */
-  /* background-size: cover;
+    /* background-image: url('Imagens/Imagem_Inicio.png'); */
+    /* background-size: cover;
     background-position: center;
     background-repeat: no-repeat; */
-  height: 100vh;
-  margin: 0;
-  position: relative;
-  /* Para permitir a sobreposição */
-  padding-top: 56px;
-  /* Espaço para o cabeçalho fixo */
-  display: flex;
-  justify-content: center;
-  /* Centraliza horizontalmente */
-  align-items: center;
-  /* Centraliza verticalmente */
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    /* Para permitir a sobreposição */
+    padding-top: 56px;
+    /* Espaço para o cabeçalho fixo */
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 10px;
 }
 
 .content {
-  width: 100%;
-  overflow: hidden; 
-  position: relative; 
-  height: 100vh; 
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
 }
 
 .carousel {
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 100vh;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
 }
 
 .carousel-item {
-  min-width: 100%;
-  transition: transform 0.5s ease-in-out;
-  position: relative;
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
 }
 
 /* imagem inteira */
 .carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* escrita */
 .caption {
-  position: absolute; 
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  background: radial-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); 
-  color: #f0f0f0; 
-  padding: 20px 40px; 
-  border-radius: 15px; 
-  font-size: 24px; 
-  font-weight: 600; 
-  text-align: center; 
- 
-  letter-spacing: 1px; 
-  animation: fadeIn 1.5s ease-in-out; /* animação */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    color: #f0f0f0;
+    padding: 20px 40px;
+    border-radius: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+
+    letter-spacing: 1px;
+    animation: fadeIn 1.5s ease-in-out;
+    /* animação */
 }
 
 /* animação*/
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.8);
-  }
-  to {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1); 
-  }
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
 }
 
 button.prev,
 button.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.9);
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 24px;
-  border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 5px;
 }
 
 button.prev {
-  left: 10px;
+    left: 10px;
 }
 
 button.next {
-  right: 10px;
+    right: 10px;
 }
 
 button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Hamburguer menu  */
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    margin-left: 16px;
+    z-index: 2001;
+}
+
+.hamburger span {
+    height: 4px;
+    width: 100%;
+    background: #54D100;
+    margin: 5px 0;
+    border-radius: 2px;
+    display: block;
+    transition: 0.3s;
+}
+
+.navbar-links {
+    display: flex;
+    /* gap: 28px; */
+    align-items: center;
+    margin-right: 50px;
+}
+
+/* Responsivo: menu hamburguer */
+@media (max-width: 900px) {
+    .hamburger {
+        display: flex;
+        position: absolute;
+        left: 20px;
+        top: 24px;
+        margin-left: 0;
+    }
+
+    .navbar-links {
+        left: -100vw;
+        right: auto;
+        top: 0;
+        position: fixed;
+        height: 100vh;
+        width: 70vw;
+        background: #222;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 80px 24px 24px 24px;
+        gap: 24px;
+        transition: left 0.3s;
+        z-index: 2000;
+        box-shadow: 2px 0 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .menu-toggle:checked~.navbar-links {
+        left: 0;
+        right: auto;
+    }
 }
 
 /* .inicio {
@@ -109,26 +187,26 @@ button:hover {
     margin: 0;
     position: relative;
     /* Para permitir a sobreposição */
-    /* padding-top: 80px; */
-    /* Espaço para o cabeçalho fixo */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* Centraliza horizontalmente */
-    /* align-items: center; */
-    /* Centraliza verticalmente */
+/* padding-top: 80px; */
+/* Espaço para o cabeçalho fixo */
+/* display: flex; */
+/* justify-content: center; */
+/* Centraliza horizontalmente */
+/* align-items: center; */
+/* Centraliza verticalmente */
 /* }  */
 
 /* .overlay {
     position: absolute;
     /* Para cobrir a imagem de fundo */
-    /* top: 0; */
-    /* left: 0; */
-    /* right: 0; */
-    /* bottom: 0; */
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    /* Preto com 50% de opacidade */
-    /* z-index: 1; */
-    /* A sobreposição deve estar acima da imagem de fundo */
+/* top: 0; */
+/* left: 0; */
+/* right: 0; */
+/* bottom: 0; */
+/* background-color: rgba(0, 0, 0, 0.5); */
+/* Preto com 50% de opacidade */
+/* z-index: 1; */
+/* A sobreposição deve estar acima da imagem de fundo */
 /* }  */
 
 /* NAVBAR */
@@ -186,12 +264,12 @@ a:focus,
     text-shadow:
         2px 2px 0px black,
         /* Sombra 1 (direita e abaixo) */
-        /* -2px -2px 0px black, */
-        /* Sombra 2 (esquerda e acima) */
-        /* 2px -2px 0px black, */
-        /* Sombra 3 (direita e acima) */
-        /* -2px 2px 0px black; */
-    /* Sombra 4 (esquerda e abaixo) */
+/* -2px -2px 0px black, */
+/* Sombra 2 (esquerda e acima) */
+/* 2px -2px 0px black, */
+/* Sombra 3 (direita e acima) */
+/* -2px 2px 0px black; */
+/* Sombra 4 (esquerda e abaixo) */
 /* } */
 
 /* .adapt {
