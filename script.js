@@ -53,4 +53,26 @@ chk.addEventListener('change', () => {
   document.body.classList.toggle('dark');
 });
 
+//carrossel
+let currentSlide = 0;
 
+function moveSlide(direction) {
+  const slides = document.querySelectorAll('.carousel-item');
+  const totalSlides = slides.length;
+
+  slides[currentSlide].classList.remove('active');
+  currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+  slides[currentSlide].classList.add('active');
+
+  const offset = -currentSlide * 100;
+  slides.forEach(slide => {
+  slide.style.transform = `translateX(${offset}%)`;
+  });
+}
+
+function autoSlide() {
+  moveSlide(1); 
+}
+
+// intervalo automatico de 4 segundos
+setInterval(autoSlide, 4000); 
