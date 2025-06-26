@@ -46,6 +46,13 @@ body {
     color: #54D100;
 }
 
+a:focus,
+.button:focus {
+    outline: 2px solid #54D100;
+    border-radius: 2px;
+    outline-offset: 4px;
+}
+
 h2 {
     font-size: 30px;
     margin-bottom: 16px;
@@ -66,7 +73,7 @@ input[type="submit"] {
     cursor: pointer;
     /* Faz a animação acontecer "lentamente", em 0.2 segundos */
     transition: background 0.2s, transform 0.2s;
-    outline: none;
+
 }
 
 button:hover,
@@ -95,11 +102,6 @@ textarea {
     transition: border 0.2s;
 }
 
-input:focus-visible,
-textarea:focus-visible {
-    border: 2px solid #54D100;
-    outline: none;
-}
 
 .footer {
     background-color: #333;
@@ -262,7 +264,7 @@ a {
     transition: color 0.2s;
 }
 
-a:hover,
+/* a:hover,
 a:focus-visible {
     color: #3aa200;
     text-decoration: underline;
@@ -271,7 +273,7 @@ a:focus-visible {
 a:focus-visible {
     outline: 3px solid #54D100;
     outline-offset: 2px;
-}
+} */
 
 /* Dark mode */
 body.dark {
