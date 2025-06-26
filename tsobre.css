@@ -7,7 +7,7 @@ body {
     line-height: 1.6;
 }
 
-header {
+/* header {
     position: fixed;
     top: 0;
     background-color: #555555;
@@ -19,10 +19,35 @@ header {
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 100;
+} */
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.41);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #54D100;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 16px;
     letter-spacing: 1px;
 }
@@ -107,7 +132,7 @@ textarea:focus-visible {
     background: #fff;
     box-shadow: 0 2px 12px rgba(84, 209, 0, 0.07);
     padding: 24px 28px;
-    font-size: 1.1rem;
+    font-size: 15px;
     color: #222;
     transition: box-shadow 0.2s, transform 0.2s;
 }
@@ -154,7 +179,7 @@ textarea:focus-visible {
     background: #fff;
     margin: 10px;
     padding: 18px 12px;
-    font-size: 1.05rem;
+    font-size: 15px;
     color: #222;
     transition: box-shadow 0.2s, border 0.2s;
 }
@@ -221,7 +246,7 @@ textarea:focus-visible {
     padding: 18px;
     width: 100%;
     max-width: 700px;
-    font-size: 2rem;
+    font-size: 15px;
     margin: 0 auto 24px auto;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -428,7 +453,7 @@ body.dark a:focus-visible {
     }
 
     .integrantes {
-        width: 95vw;
+        width: 50vw;
         min-width: 120px;
         height: auto;
         min-height: 120px;
