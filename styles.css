@@ -1,4 +1,106 @@
+/* carrossel */
 .inicio {
+  /* background-image: url('Imagens/Imagem_Inicio.png'); */
+  /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  /* Para permitir a sobreposição */
+  padding-top: 56px;
+  /* Espaço para o cabeçalho fixo */
+  display: flex;
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
+}
+
+.content {
+  width: 100%;
+  overflow: hidden; 
+  position: relative; 
+  height: 100vh; 
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.carousel-item {
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+}
+
+/* imagem inteira */
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* escrita */
+.caption {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  background: radial-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); 
+  color: #f0f0f0; 
+  padding: 20px 40px; 
+  border-radius: 15px; 
+  font-size: 24px; 
+  font-weight: 600; 
+  text-align: center; 
+ 
+  letter-spacing: 1px; 
+  animation: fadeIn 1.5s ease-in-out; /* animação */
+}
+
+/* animação*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); 
+  }
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* .inicio {
     background-image: url('Imagens/Imagem_Inicio.png');
     background-size: cover;
     background-position: center;
@@ -7,27 +109,27 @@
     margin: 0;
     position: relative;
     /* Para permitir a sobreposição */
-    padding-top: 80px;
+    /* padding-top: 80px; */
     /* Espaço para o cabeçalho fixo */
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     /* Centraliza horizontalmente */
-    align-items: center;
+    /* align-items: center; */
     /* Centraliza verticalmente */
-}
+/* }  */
 
-.overlay {
+/* .overlay {
     position: absolute;
     /* Para cobrir a imagem de fundo */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* top: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* bottom: 0; */
+    /* background-color: rgba(0, 0, 0, 0.5); */
     /* Preto com 50% de opacidade */
-    z-index: 1;
+    /* z-index: 1; */
     /* A sobreposição deve estar acima da imagem de fundo */
-}
+/* }  */
 
 /* NAVBAR */
 .navbar {
@@ -54,6 +156,13 @@
     color: #54D100;
 }
 
+a:focus,
+.button:focus {
+    outline: 2px solid #54D100;
+    border-radius: 2px;
+    outline-offset: 4px;
+}
+
 .content {
     position: relative;
     /* Para garantir que o conteúdo apareça acima da sobreposição */
@@ -69,7 +178,7 @@
     /* conteúdo empilha verticalmente */
 }
 
-.title {
+/* .title {
     font-family: 'Montserrat', sans-serif;
     font-size: 120px;
     font-weight: bold;
@@ -77,21 +186,21 @@
     text-shadow:
         2px 2px 0px black,
         /* Sombra 1 (direita e abaixo) */
-        -2px -2px 0px black,
+        /* -2px -2px 0px black, */
         /* Sombra 2 (esquerda e acima) */
-        2px -2px 0px black,
+        /* 2px -2px 0px black, */
         /* Sombra 3 (direita e acima) */
-        -2px 2px 0px black;
+        /* -2px 2px 0px black; */
     /* Sombra 4 (esquerda e abaixo) */
-}
+/* } */
 
-.adapt {
+/* .adapt {
     color: #FFFFFF;
 }
 
 .fit {
     color: #54D100;
-}
+} */
 
 .texto-preto {
     color: #000000;

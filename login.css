@@ -58,6 +58,13 @@
   color: #54D100;
 }
 
+a:focus,
+.button:focus {
+    outline: 2px solid #54D100;
+    border-radius: 2px;
+    outline-offset: 4px;
+}
+
 body {
   display: flex;
   justify-content: center;
