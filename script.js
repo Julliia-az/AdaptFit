@@ -47,11 +47,23 @@ document.addEventListener('click', function (e) {
 });
 
 //dark mode
-const chk = document.getElementById('chk');
+ const chk = document.getElementById('chk');
 
-chk.addEventListener('change', () => {
-  document.body.classList.toggle('dark');
-});
+  // Verifica o localStorage ao carregar a página
+  if (localStorage.getItem('darkMode') === 'enabled') {
+    document.body.classList.add('dark');
+    chk.checked = true; // mantém a caixa marcada
+  }
+
+  chk.addEventListener('change', () => {
+    if (chk.checked) {
+      document.body.classList.add('dark');
+      localStorage.setItem('darkMode', 'enabled'); // salva a escolha
+    } else {
+      document.body.classList.remove('dark');
+      localStorage.setItem('darkMode', 'disabled'); // salva a escolha
+    }
+  });
 
 //carrossel
 let currentSlide = 0;
